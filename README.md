@@ -26,5 +26,9 @@ We Switched From Arch To Debian Because Most Of The Linux Applications Support D
 ![Sonya-Swarm-Wine 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/2100adb5-0e36-497f-84ac-a06e073355ab)![Sbstnblnd-Plateau-Apps-steam 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/7b0f60f6-ca63-4b3e-b774-fbc8649b2cca)
 
 
+# Make Your Own Debian ISO
+[Very Helpful Guide](https://dev.to/otomato_io/how-to-create-custom-debian-based-iso-4g37)
+[For Those Wanting To Make Arch Linux ISO](https://wiki.archlinux.org/title/archiso)
+The Debian One Is Easier
 
 
