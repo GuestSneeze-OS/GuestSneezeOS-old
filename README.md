@@ -5,9 +5,13 @@ More [here](https://guestsneezeos.github.io)
 All Info Will Be in The Wiki
 # Important And New News
 GuestSneezeOS Switches From Arch To Debian🆕 ⚠️
+<br>
 Coming Soon On [Linux.org](https://www.linux.org/) 🆕
+<br>
 Soon To Support 90's Hardware (GuestSneezeOS Lite) 🆕
+<br>
 GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
+<br>
 
 
 
