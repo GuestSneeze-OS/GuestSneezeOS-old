@@ -3,12 +3,21 @@
 
 More [here](https://guestsneezeos.github.io)
 All Info Will Be in The Wiki
+# Important And New News
+GuestSneezeOS Switches From Arch To Debian🆕 ⚠️
+Coming Soon On [Linux.org](https://www.linux.org/) 🆕
+Soon To Support 90's Hardware (GuestSneezeOS Lite) 🆕
+GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
+
+
 
 # Why Are We Switching To Debian
 ![Papirus-Team-Papirus-Apps-Distributor-logo-archlinux 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/36faa4d9-7c6f-4b6a-8048-c91e885f5030)
 ![Icons8-Ios7-Arrows-Right 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/227cfd2f-d339-4bc3-a0e0-5c6d558df853)
 ![Tatice-Operating-Systems-Debian 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/06e2bfeb-5740-4b6d-95ff-98b4a37214da) 
 -
+Beware ☣Toxic Arch Users☣ We Don't Care
+<br>
 We Switched From Arch To Debian Because Most Of The Linux Applications Support Debian And Deritaves, And Most Of The Applications We Use Support Debian (Some Can Support Arch Linux) 
 
 # What Are The Preinstalled Apps 
