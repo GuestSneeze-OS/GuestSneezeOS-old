@@ -80,4 +80,6 @@ PowerPC Is Not And Will Never Be Supported Until Steam Games Supports PPC There 
 - **Recognized OS**✅
 - **Legacy Boot Support**✅
 - **Updates To The LXDE Enviorment**✅
+- **Switched Slogan To The Rising Of The Blue Moon**✅
+- **Changed Logo**✅
 
