@@ -56,6 +56,8 @@ A [Linux.org Account](https://www.linux.org/members/guestsneezeos-offcial.177202
 [For Those Wanting To Make Arch Linux ISO](https://wiki.archlinux.org/title/archiso)
 The Debian One Is Easier
 # How Do I Know My CPU Or GPU is Supported
-Check The Wiki
+Check The Wiki And Search For Your CPU/GPU In The System Requirements Page 
+<br>
+PowerPC Is Not And Will Never Be Supported ('_') Until Steam Games Supports PPC There Is Nothing I Can Do
 
 
