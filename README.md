@@ -30,9 +30,7 @@ GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
 ![Icons8-Ios7-Arrows-Right 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/227cfd2f-d339-4bc3-a0e0-5c6d558df853)
 ![Tatice-Operating-Systems-Debian 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/06e2bfeb-5740-4b6d-95ff-98b4a37214da) 
 -
-Beware ☣Toxic Arch Users☣ We Don't Care
-<br>
-We Switched From Arch To Debian Because Most Of The Linux Applications Support Debian And Deritaves, And Most Of The Applications We Use Support Debian (Some Can Support Arch Linux) 
+We Switched From Arch To Debian Because Most Of The Linux Applications Support Debian And Deritaves, And Most Of The Applications We Use Support Debian (Some Can Support Arch Linux) GuestSneezeOS Requires A Simpler GUI (Graphical User Interface) 
 # Features
 Lightweight Almost 10 Gigabytes (GuestSneezeOS) And 8 GB(GuestSneezeOS Lite)
 <br>
@@ -63,3 +61,10 @@ Check The Wiki And Search For Your CPU/GPU In The System Requirements Page
 <br>
 PowerPC Is Not And Will Never Be Supported ('_') Until Steam Games Supports PPC There Is Nothing I Can Do
 
+===============================**GuestSneezeOS Quests/Completed So Far**========================================================================================
+**Switched To Debian**✅
+**Supports Older Devices GuestSneezeOS Lite**✅
+**SteamOS Like Experience**✅
+**No Errors**❌
+**No Arch Linux User Attacks**❌
+**Latest Steam Version**✅
