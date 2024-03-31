@@ -1,6 +1,6 @@
 # GuestSneezeOS
 ![steamos-logo(1)](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/f4eaa19a-7c4e-4340-bd15-ee9456cb47c9)
-What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Made To Install [**SteamOS**](https://https://store.steampowered.com/steamos) On Your PC (SteamOS 3 Not 1 Or 2) **GuestSneezeOS** Comes Preinstalled With [**Wine A Windows App Compatibility Layer**](https://www.winehq.org/) & [**Flathub The App Store For Linux**](https://flathub.org/) And With [***Steam The Ultimate Gaming Appstore**](https://store.steampowered.com/) And More Apps Will Be Listed In The Wiki 
+What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Made To Install [**SteamOS**](https://https://store.steampowered.com/steamos) On Your PC (SteamOS 3 Not 1 Or 2) **GuestSneezeOS** Comes Preinstalled With [**Wine A Windows App Compatibility Layer**](https://www.winehq.org/) & [**Flathub The App Store For Linux**](https://flathub.org/) And With [***Steam The Ultimate Gaming Appstore**](https://store.steampowered.com/) And More Apps Will Be Listed In The Wiki. **GuestSneezeOS** 
 <br>
 <br>
 **TABLE OF CONTENTS**
@@ -57,14 +57,12 @@ Lightweight Version Available
 > Yes We Are Stealing This Joke From HoloISO But All CPU's And GPU's Work Very Fine But PowerPC Will Not Work With **GuestSneezeOS** Or **GuestSneezeOS Lite** Due To Its Unsupported Architecture With Debian 11 Bullseye And Steam Not Being  Supported With It.
 - What CPU And GPU's Are Supported
 > The GPU's From NVIDIA,INTEL,AMD Are Supported And CPU's Are Supported Are Intel (64 Bit) (Celeron 29500U And Above) And AMD CPU's (64 bit)
-# Make Your Own Debian ISO
-[Very Helpful Guide](https://dev.to/otomato_io/how-to-create-custom-debian-based-iso-4g37)
-[For Those Wanting To Make Arch Linux ISO](https://wiki.archlinux.org/title/archiso)
-The Debian One Is Easier
+# Make Your Own ISO
+**Follow [These](https://dev.to/otomato_io/how-to-create-custom-debian-based-iso-4g37) Steps Its Very Very Easy**
 # How Do I Know My CPU Or GPU is Supported
 Check The Wiki And Search For Your CPU/GPU In The System Requirements Page 
 <br>
-PowerPC Is Not And Will Never Be Supported ('_') Until Steam Games Supports PPC There Is Nothing I Can Do
+PowerPC Is Not And Will Never Be Supported Until Steam Games Supports PPC There Is Nothing I Can Do
 # Authors
 GuestSneezePlayz (Project Leader)
 MinecraftToGo (Supporter)
