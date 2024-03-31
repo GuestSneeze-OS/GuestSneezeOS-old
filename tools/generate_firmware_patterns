@@ -1,0 +1,174 @@
+#!/usr/bin/perl
+# © 2021 Cyril Brulebois <kibi@debian.org>
+#
+# Generate ready-to-use .patterns files so that one can use grep to
+# perform hardware to firmware-package lookups in the installer
+# (see MODALIAS= lines in `udevadm info --export-db`), see the
+# hw-detect component.
+#
+# Parameters: dists/<suite>/*/dep11/Components-<arch>.yml.(gz|xz)
+#
+# We're limiting ourselves to packages announcing Type: firmware, and
+# they need to include such information in their metadata, e.g.
+# src:firmware-nonfree; the --test option can be used until such
+# packages appear in the archive.
+#
+# See: https://salsa.debian.org/kernel-team/firmware-nonfree/-/merge_requests/19
+
+use strict;
+use warnings;
+
+use File::Path qw(make_path);
+use File::Slurp;
+use Getopt::Long;
+use YAML::XS;
+
+
+# XXX: Drop support for --test once we have the required metadata in
+# the archive.
+my $output_dir = '.';
+my $test;
+my $verbose;
+my $pkgname = "ALL";
+
+GetOptions( "output-dir=s" => \$output_dir,
+            "test"         => \$test,
+            "verbose"      => \$verbose,
+            "package=s"    => \$pkgname)
+    or die "Error in command line arguments";
+
+
+sub format_alias {
+    return map { $a = $_; $a =~ s/[*]/.*/g; "^$a\$\n" } @_;
+}
+
+
+sub process_components {
+    my $input = shift;
+    my $content;
+    print STDERR "processing $input\n"
+        if $verbose;
+
+    if ($input =~ /\.gz$/) {
+        $content = `zcat $input`;
+    }
+    elsif ($input =~ /\.xz$/) {
+        $content = `xzcat $input`;
+    }
+    else {
+        die "only gz and xz suffixes are supported";
+    }
+
+    my @packages;
+    foreach my $array (Load $content) {
+        # XXX: Drop the condition once we have the required metadata
+        # in the archive.
+        if (! $test) {
+            next if not defined $array->{Type};
+            next if $array->{Type} ne 'firmware';
+        }
+        next if not defined $array->{Provides};
+        next if not defined $array->{Provides}->{modaliases};
+
+        print STDERR "found modaliases entries for firmware package ", $array->{Package}, "\n"
+            if $verbose;
+
+	if ($pkgname eq "ALL" or $pkgname eq $array->{Package}) {
+
+	    my $patterns_file = $output_dir . "/" . $array->{Package} . ".patterns";
+	    printf STDERR "writing %d entries to %s\n",
+		(scalar @{ $array->{Provides}->{modaliases} }),
+		$patterns_file;
+
+	    # For each alias, anchor the pattern on the left (^) and on
+	    # the right ($), and replace each '*' with '.*':
+	    write_file($patterns_file,
+		       format_alias( @{ $array->{Provides}->{modaliases} } ));
+	    push @packages, $array->{Package};
+	}
+    }
+    return @packages;
+}
+
+
+# Prepare output directory:
+if (! -d $output_dir) {
+    print STDERR "creating output directory $output_dir\n"
+        if $verbose;
+    make_path($output_dir, { verbose => $verbose });
+}
+
+write_file("$output_dir/README.txt",
+           "These files help Debian Installer detect helpful firmware packages (via hw-detect).\n");
+
+# Generate .patterns file to match firmware packages found in
+# Components-* files:
+my @all_packages;
+foreach my $component (@ARGV) {
+    my @packages = process_components($component);
+    push @all_packages, @packages;
+}
+@all_packages = sort @all_packages;
+print STDERR "firmware packages found across all components: @all_packages\n"
+    if $verbose;
+
+# Workaround for firmware-sof-signed, which doesn't advertise firmware
+# files it might need through the MODULE_FIRMWARE() macro (meaning no
+# chance to generate DEP-11 info from there): alias info manually
+# extracted on 2021-07-25 (linux-image-5.10.0-8-amd64, 5.10.46-2).
+#
+# XXX: To be kept in sync!
+my $SOF = 'firmware-sof-signed';
+if (! grep { $_ eq $SOF } @all_packages) {
+
+    if ($pkgname eq 'ALL' or $pkgname eq 'firmware-sof-signed') {
+
+	# Extract on amd64, from the installed package, with the following
+	# command. Note that descending under intel/ would lead to no
+	# aliases, so stick to the top-level directory for sof:
+	#
+	#     for x in $(dpkg -L linux-image-5.10.0-8-amd64 | grep kernel/sound/soc/sof/.*\.ko$); do /usr/sbin/modinfo $x | awk '/^alias:/ { print $2 }'; done | sort
+	#
+	# XXX: If that's not enough, there are other modules matching the
+	#      kernel/sound/soc/intel/boards/snd-soc-sof*.ko pattern.
+
+	my @sof_aliases = qw(
+	    pci:v00008086d000002C8sv*sd*bc*sc*i*
+	    pci:v00008086d000006C8sv*sd*bc*sc*i*
+	    pci:v00008086d0000119Asv*sd*bc*sc*i*
+	    pci:v00008086d00001A98sv*sd*bc*sc*i*
+	    pci:v00008086d00003198sv*sd*bc*sc*i*
+	    pci:v00008086d000034C8sv*sd*bc*sc*i*
+	    pci:v00008086d000038C8sv*sd*bc*sc*i*
+	    pci:v00008086d00003DC8sv*sd*bc*sc*i*
+	    pci:v00008086d000043C8sv*sd*bc*sc*i*
+	    pci:v00008086d00004B55sv*sd*bc*sc*i*
+	    pci:v00008086d00004B58sv*sd*bc*sc*i*
+	    pci:v00008086d00004DC8sv*sd*bc*sc*i*
+	    pci:v00008086d00005A98sv*sd*bc*sc*i*
+	    pci:v00008086d00009DC8sv*sd*bc*sc*i*
+	    pci:v00008086d0000A0C8sv*sd*bc*sc*i*
+	    pci:v00008086d0000A348sv*sd*bc*sc*i*
+	    pci:v00008086d0000A3F0sv*sd*bc*sc*i*
+	    platform:jsl_rt5682_max98360a
+	    platform:jsl_rt5682_rt1015
+	    platform:sof-audio
+	    platform:sof_rt5682
+	    platform:sof_sdw
+	    platform:tgl_max98357a_rt5682
+	    platform:tgl_max98373_rt5682
+	);
+
+	print STDERR "deploying manual workaround for $SOF\n"
+	    if $verbose;
+
+	my $sof_file = $output_dir . "/" . $SOF . ".patterns";
+	printf STDERR "writing %d entries to %s\n",
+	    (scalar @sof_aliases),
+	    $sof_file;
+
+	write_file($sof_file,
+		   format_alias(@sof_aliases));
+	push @all_packages, $SOF;
+    }
+}
