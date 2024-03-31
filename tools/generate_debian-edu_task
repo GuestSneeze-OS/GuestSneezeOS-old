@@ -1,0 +1,80 @@
+#!/usr/bin/perl -w
+#
+# generate_debian-edu_task
+#
+# Work out which education packages we need
+#
+# Copyright Steve McIntyre <93sam@debian.org> 2018
+#
+# GPL 2
+#
+
+my ($mirror, $codename, $archlist, $outfile, $localdebs);
+my $date;
+my $pkgfiles = "";
+my ($pkg, $filename, $arch);
+my %seen;
+
+$codename = $ENV{'CODENAME'};
+$mirror = $ENV{'MIRROR'};
+$localdebs = $ENV{'LOCALDEBS'};
+$archlist = shift;
+$outfile = shift;
+
+if (!defined($codename) || !defined($mirror) ||
+    !defined($archlist) || !defined($outfile)) {
+    die "Error in arguments\n";
+}
+
+foreach $arch (split(' ', $archlist)) {
+    $pkgfiles = "$pkgfiles $mirror/dists/$codename/*/binary-$arch/Packages.gz";
+    $pkgfiles = "$pkgfiles $mirror/dists/$codename/*/binary-$arch/Packages.xz";
+}
+
+if (defined($localdebs)) {
+    foreach $arch (split(' ', $archlist)) {
+        $pkgfiles = "$pkgfiles $localdebs/dists/$codename/*/binary-$arch/Packages.gz";
+        $pkgfiles = "$pkgfiles $localdebs/dists/$codename/*/binary-$arch/Packages.xz";
+    }
+}
+
+open (OUT, "> $outfile") or die "Can't open outfile for writing: $!\n";
+
+$date = `date -u`;
+chomp $date;
+
+print OUT "/*\n";
+print OUT " * 'debian-edu-full' task file; generated automatically by generate_debian-edu_task\n";
+print OUT " * for \"$archlist\" on $date\n";
+print OUT " * Do not edit - changes will not be preserved\n";
+print OUT " */\n";
+
+open (INPKG, "\$BASEDIR/tools/catz $pkgfiles |") or die "Can't read input package files: $!\n";
+$/ = ''; # Browse by paragraph
+
+# Ignore a few tasks that we don't want, e.g. education-development,
+# it's too big and pulls in all sorts of things that most end users won't
+# want/need.
+my @ignore_list = ('education-development', 'education-video');
+
+while (defined($_ = <INPKG>)) {
+    m/^Package: (\S+)/m and $pkg = $1;
+    m/^Filename: (\S+)/m and $filename = $1;
+
+    # We want all packages matching "^education-" and "^debian-edu-".
+    # Also wanted: all tasks; these are supposed to pull in localization related
+    # packages. Add otherwise missing gimp-help and thunderbird localization.
+    if (! ($pkg =~ /^education-|^debian-edu-|^task-|^gimp-help-|thunderbird-l10n-all/)) {
+        next;
+    }
+
+    # Except things on the ignore list
+    if (grep {$_ eq $pkg} @ignore_list) {
+	next;
+    }
+
+    print OUT "$pkg\n";
+}
+
+close INPKG;
+close OUT;
