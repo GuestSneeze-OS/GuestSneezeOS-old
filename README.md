@@ -26,6 +26,8 @@ Soon To Support 90's Hardware (GuestSneezeOS Lite) 🆕
 GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
 <br>
 Created Custom Logo (No Longer Using SteamOS Logo) 🆕
+<br>
+Coming Soon On [Kernal.eu](https://kernal.eu/)
 
 # Why Are We Switching To Debian
 ![Papirus-Team-Papirus-Apps-Distributor-logo-archlinux 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/36faa4d9-7c6f-4b6a-8048-c91e885f5030)
@@ -83,4 +85,4 @@ PowerPC Is Not And Will Never Be Supported Until Steam Games Supports PPC There 
 - **Updates To The LXDE Enviorment**✅
 - **Switched Slogan To The Rising Of The Blue Moon**✅
 - **Changed Logo**✅
-
+- **Latest Linux Kernal**✅
