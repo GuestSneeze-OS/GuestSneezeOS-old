@@ -1,5 +1,5 @@
 # GuestSneezeOS
-![Untitled](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/3d95216c-5582-4275-8b21-9e35d37f6ed9)
+![Untitled](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/3ba1e707-2c5f-40b4-94f8-d79dd1b51b66)
 What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Made To Install [**SteamOS**](https://https://store.steampowered.com/steamos) On Your PC (SteamOS 3 Not 1 Or 2) **GuestSneezeOS** Comes Preinstalled With [**Wine A Windows App Compatibility Layer**](https://www.winehq.org/) & [**Flathub The App Store For Linux**](https://flathub.org/) And With [***Steam The Ultimate Gaming Appstore**](https://store.steampowered.com/) And More Apps Will Be Listed In The Wiki 
 <br>
 <br>
