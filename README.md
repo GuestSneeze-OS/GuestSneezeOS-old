@@ -66,10 +66,15 @@ GuestSneezePlayz (Project Leader)
 MinecraftToGo (Supporter)
 ID10T_ERROR (Cool Tech Youtuber And Supporter)
 
-===============================**GuestSneezeOS Quests/Completed So Far**===============================================
+==============**GuestSneezeOS Completed So Far**===========
 **Switched To Debian**✅
 **Supports Older Devices GuestSneezeOS Lite**✅
 **SteamOS Like Experience**✅
 **No Errors**❌
 **No Arch Linux User Attacks**❌
 **Latest Steam Version**✅
+**Official GNU Lisence**✅
+**Recognized OS**✅
+**Legacy Boot Support**✅
+**Updates To The LXDE Enviorment**✅
+
