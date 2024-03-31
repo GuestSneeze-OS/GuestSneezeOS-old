@@ -1,7 +1,18 @@
 # GuestSneezeOS
 ![Untitled](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/3d95216c-5582-4275-8b21-9e35d37f6ed9)
 What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Made To Install [**SteamOS**](https://https://store.steampowered.com/steamos) On Your PC (SteamOS 3 Not 1 Or 2) **GuestSneezeOS** Comes Preinstalled With [**Wine A Windows App Compatibility Layer**](https://www.winehq.org/) & [**Flathub The App Store For Linux**](https://flathub.org/) And With [***Steam The Ultimate Gaming Appstore**](https://store.steampowered.com/) And More Apps Will Be Listed In The Wiki 
-
+<br>
+<br>
+**TABLE OF CONTENTS**
+* [GuestSneezeOS](#guestsneezeos)
+* [News](#important-and-new-news)
+* [Switching To Debian](#why-we-are-switching-to-debian)
+* [Features](#features)
+* [General](#general)
+* [Make Your Own Debian ISO](#make-your-own-debian-iso)
+* [CPU And GPU Support](#how-do-i-know-my-cpu-or-gpu-is-supported)
+<br>
+<br>
 More Info Will Be [here](https://guestsneezeos.github.io) & Here
 All Info Will Be in The Wiki
 # Important And New News
@@ -13,14 +24,6 @@ Soon To Support 90's Hardware (GuestSneezeOS Lite) 🆕
 <br>
 GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
 <br>
-**TABLE OF CONTENTS**
-
-* [GuestSneezeOS](#guestsneezeos)
-*[Why Are We Switching To Debian](#why-we-are-switching-to-debian)
-* [Features](#features)
-* [General](#general)
- 
-
 
 # Why Are We Switching To Debian
 ![Papirus-Team-Papirus-Apps-Distributor-logo-archlinux 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/36faa4d9-7c6f-4b6a-8048-c91e885f5030)
@@ -59,5 +62,4 @@ The Debian One Is Easier
 Check The Wiki And Search For Your CPU/GPU In The System Requirements Page 
 <br>
 PowerPC Is Not And Will Never Be Supported ('_') Until Steam Games Supports PPC There Is Nothing I Can Do
-
 
