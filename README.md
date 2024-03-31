@@ -25,6 +25,7 @@ Soon To Support 90's Hardware (GuestSneezeOS Lite) 🆕
 <br>
 GuestSneezeOS 5.1.9 Soon Turning LTS⚠️
 <br>
+Created Custom Logo (No Longer Using SteamOS Logo) 🆕
 
 # Why Are We Switching To Debian
 ![Papirus-Team-Papirus-Apps-Distributor-logo-archlinux 96](https://github.com/GuestSneezeOS/GuestSneezeOSArchive/assets/163439609/36faa4d9-7c6f-4b6a-8048-c91e885f5030)
