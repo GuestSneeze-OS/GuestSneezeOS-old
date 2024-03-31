@@ -64,9 +64,9 @@ Check The Wiki And Search For Your CPU/GPU In The System Requirements Page
 <br>
 PowerPC Is Not And Will Never Be Supported Until Steam Games Supports PPC There Is Nothing I Can Do
 # Authors
-GuestSneezePlayz (Project Leader)
-MinecraftToGo (Supporter)
-ID10T_ERROR (Cool Tech Youtuber And Supporter)
+- GuestSneezePlayz (Project Leader)
+- MinecraftToGo (Supporter)
+- ID10T_ERROR (Cool Tech Youtuber And Supporter)
 
 ==============**GuestSneezeOS Completed So Far**===========
 <br>
