@@ -5,12 +5,13 @@ What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Mad
 <br>
 **TABLE OF CONTENTS**
 * [GuestSneezeOS](#guestsneezeos)
-* [News](#important-and-new-news)
-* [Switching To Debian](#why-we-are-switching-to-debian)
 * [Features](#features)
 * [General](#general)
 * [Make Your Own Debian ISO](#make-your-own-debian-iso)
 * [CPU And GPU Support](#how-do-i-know-my-cpu-or-gpu-is-supported)
+* [Developers](#authors)
+* [System Requirements](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/System-Requirements)
+* [How To Install](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/Install-GuestSneezeOS-On-Computer)
 <br>
 <br>
 More Info Will Be [here](https://guestsneezeos.github.io) & Here
@@ -60,6 +61,10 @@ The Debian One Is Easier
 Check The Wiki And Search For Your CPU/GPU In The System Requirements Page 
 <br>
 PowerPC Is Not And Will Never Be Supported ('_') Until Steam Games Supports PPC There Is Nothing I Can Do
+# Authors
+GuestSneezePlayz (Project Leader)
+MinecraftToGo (Supporter)
+ID10T_ERROR (Cool Tech Youtuber And Supporter)
 
 ===============================**GuestSneezeOS Quests/Completed So Far**========================================================================================
 **Switched To Debian**✅
