@@ -44,6 +44,10 @@ A [Linux.org Account](https://www.linux.org/members/guestsneezeos-offcial.177202
 91% Of Steam Games Supported
 <br>
 [KDE Plasma](https://kde.org/plasma-desktop/) For Easy Customizations And LXDE For Old Or Small Disked Computers (KDE PLASMA COMES WITH **GUESTSNEEZEOS** AND LXDE COMES **GUESTSNEEZEOS LITE**)
+<br>
+Small ISO Sizes
+<br>
+Lightweight Version Available
 # General
 - Why is It Better Than HOLOISO
 > HoloISO Is **NO LONGER GETTING UPDATES OR SECURITY UPDATES** And You Will Need To Find Other OS's That Are Similar To SteamOS
