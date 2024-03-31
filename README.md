@@ -66,7 +66,7 @@ GuestSneezePlayz (Project Leader)
 MinecraftToGo (Supporter)
 ID10T_ERROR (Cool Tech Youtuber And Supporter)
 
-===============================**GuestSneezeOS Quests/Completed So Far**========================================================================================
+===============================**GuestSneezeOS Quests/Completed So Far**===============================================
 **Switched To Debian**✅
 **Supports Older Devices GuestSneezeOS Lite**✅
 **SteamOS Like Experience**✅
