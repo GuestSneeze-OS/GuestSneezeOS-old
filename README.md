@@ -1,7 +1,6 @@
 # GuestSneezeOS
-![steamos-logo(1)](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/f4eaa19a-7c4e-4340-bd15-ee9456cb47c9)
-[![badge](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/abeba59a-e2e3-48d4-92b3-dd19787c9c2b)](https://guestsneezeos.github.io)
-<br>
+![steamos-logo(1)](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/5de96186-87d6-41f6-b2e1-1b5dbbe6b844)
+
 **Table Of Contents**
 - [About GuestSneezeOS](#about)
 - [Features Of GuestSneezeOS](#features)
