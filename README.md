@@ -51,6 +51,6 @@ More Info Why It Makes It Stand Out In [Here](https://github.com/GuestSneezeOS/G
 > It Support's [Macbook's With Intel CPU's](https://apple.com),[Desktop](https://www.microsoft.com/en-us/windows/),[Laptops](https://www.microsoft.com/en-us/windows/) And [Chrome Devices](https://chromeenterprise.google/intl/en_ca/devices/)
 
 # Authors
-GuestSneezePlayz (Project Leader)
-MinecraftToGo (Contributor)
-ID10T_ERROR_ (Cool Youtuber)
+- GuestSneezePlayz (Project Leader)
+- MinecraftToGo (Contributor)
+- ID10T_ERROR_ (Cool Youtuber)
