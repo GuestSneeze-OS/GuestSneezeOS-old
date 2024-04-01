@@ -9,6 +9,7 @@
 - [System Requirements](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/System-Requirements)
 - [Official Community](https://github.com/GuestSneezeOS/GuestSneezeOS/discussions)
 - [Questions](Questions)
+- [Collabs](collab)
 
 # About
 **GuestSneezeOS** Is An Open-source OS And Its Main Goal Is To Bring SteamOS To Both New And Old Computers. We Have Made 2 Versions GuestSneezeOS & GuestSneezeOS Lite.
@@ -54,3 +55,6 @@ More Info Why It Makes It Stand Out In [Here](https://github.com/GuestSneezeOS/G
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
 - ID10T_ERROR_ (Cool Youtuber)
+
+# Collab
+No Collabs. (;-;) Can You Contribute???
