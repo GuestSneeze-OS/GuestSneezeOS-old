@@ -12,6 +12,8 @@ What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Mad
 * [Developers](#authors)
 * [System Requirements](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/System-Requirements)
 * [How To Install](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/Install-GuestSneezeOS-On-Computer)
+* [OS Comparisons](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/OS-Comparison's)
+* [What OS Is Better?](https://www.youtube.com/watch?v=xvFZjo5PgG0)
 <br>
 <br>
 More Info Will Be [here](https://guestsneezeos.github.io) & Here
