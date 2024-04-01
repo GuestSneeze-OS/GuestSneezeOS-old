@@ -15,6 +15,7 @@
 <br>
 Despite Our OS Being Debian Based And Not Arch Based Because Its Simpler And Supports More Applications And Supports Simpler Commands And Is More Lightweight Than The Other Operating System's
 ![SteamOS](https://upload.wikimedia.org/wikipedia/commons/5/59/KDE_Plasma_5.23_on_Steam_Deck_Desktop_screenshot.png)
+GuestSneezeOS Gives A Full SteamOS Experience For Those Looking For A Gaming Distro's
 
 Features
 -
@@ -48,3 +49,8 @@ More Info Why It Makes It Stand Out In [Here](https://github.com/GuestSneezeOS/G
 > Nobara Is A Very Extremly Great Even OS Which Is Based On Fedora. Fedora Is Only 10 GB (Usually) And Nobara Is 20 GB Of System Storage Which Is Very Large On Older CPU's And GPU's And GuestSneezeOS Is 10 GB And If Thats To Big Use GuestSneezeOS Lite Its Its Only 8 GB
 - What Devices It Supports
 > It Support's [Macbook's With Intel CPU's](https://apple.com),[Desktop](https://www.microsoft.com/en-us/windows/),[Laptops](https://www.microsoft.com/en-us/windows/) And [Chrome Devices](https://chromeenterprise.google/intl/en_ca/devices/)
+
+# Authors
+GuestSneezePlayz (Project Leader)
+MinecraftToGo (Contributor)
+ID10T_ERROR_ (Cool Youtuber)
