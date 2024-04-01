@@ -15,6 +15,7 @@
 <br>
 Despite Our OS Being Debian Based And Not Arch Based Because Its Simpler And Supports More Applications And Supports Simpler Commands And Is More Lightweight Than The Other Operating System's
 ![gamemode](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/7c5c1d39-9991-421d-af32-cffb2911d03a)
+![SteamOS](https://upload.wikimedia.org/wikipedia/commons/5/59/KDE_Plasma_5.23_on_Steam_Deck_Desktop_screenshot.png)
 
 Features
 -
