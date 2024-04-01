@@ -7,7 +7,7 @@ What Is **GuestSneezeOS**. **GuestSneezeOS** Is An Operating System That Was Mad
 * [GuestSneezeOS](#guestsneezeos)
 * [Features](#features)
 * [General](#general)
-* [Make Your Own Debian ISO](#make-your-own-debian-iso)
+* [Make Your Own Debian ISO](#make-your-own-iso)
 * [CPU And GPU Support](#how-do-i-know-my-cpu-or-gpu-is-supported)
 * [Developers](#authors)
 * [System Requirements](https://github.com/GuestSneezeOS/GuestSneezeOS/wiki/System-Requirements)
