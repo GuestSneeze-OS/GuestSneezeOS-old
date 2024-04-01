@@ -1,5 +1,6 @@
 # GuestSneezeOS Linux
-![steamos-logo(1)](https://github.com/GuestSneezeOS/GuestSneezeOS/assets/163439609/5de96186-87d6-41f6-b2e1-1b5dbbe6b844)
+![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/919e711f-a488-4b35-9581-5792b88a95f4)
+
 
 **Table Of Contents**
 - [About GuestSneezeOS](#about)
