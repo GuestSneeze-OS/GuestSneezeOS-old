@@ -16,6 +16,8 @@
 Despite Our OS Being Debian Based And Not Arch Based Because Its Simpler And Supports More Applications And Supports Simpler Commands And Is More Lightweight Than The Other Operating System's
 ![SteamOS](https://upload.wikimedia.org/wikipedia/commons/5/59/KDE_Plasma_5.23_on_Steam_Deck_Desktop_screenshot.png)
 GuestSneezeOS Gives A Full SteamOS Experience For Those Looking For A Gaming Distro's
+<br>
+GuestSneezeOS Plans On Bringing Gaming To All Devices (When I Mean All Devices I Mean Laptops And Desktops)
 
 Features
 -
