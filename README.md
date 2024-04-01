@@ -58,8 +58,6 @@ More Info Why It Makes It Stand Out In [Here](https://github.com/GuestSneezeOS/G
 - ID10T_ERROR_ (Cool Youtuber)
 
 # Collab
-No Collabs. (;-;) Can You Contribute???
+(;-;) Can You Contribute???
 <br>
-Check Out This Distro
-
 [![AmogOS](https://github.com/GuestSneezeOS-Linux/GuestSneezeOS-Linux/assets/163439609/bf789102-a3e1-443a-92e7-3d7ccfb6399d)](https://github.com/Amog-OS/AmogOS)
