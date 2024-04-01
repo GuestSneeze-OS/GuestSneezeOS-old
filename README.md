@@ -60,6 +60,8 @@ Lightweight Version Available
 > Yes We Are Stealing This Joke From HoloISO But All CPU's And GPU's Work Very Fine But PowerPC Will Not Work With **GuestSneezeOS** Or **GuestSneezeOS Lite** Due To Its Unsupported Architecture With Debian 11 Bullseye And Steam Not Being  Supported With It.
 - What CPU And GPU's Are Supported
 > The GPU's From NVIDIA,INTEL,AMD Are Supported And CPU's Are Supported Are Intel (64 Bit) (Celeron 29500U And Above) And AMD CPU's (64 bit)
+- What Should I Flash This With?
+> Flash It With If Your On Linux Or MacOS/Hackintosh Choose [Balena  Etcher](https://etcher.balena.io/) If Your On Windows Choose [Rufus](https://rufus.ie/en/) If Your On Android Choose [EtchDroid](https://etchdroid.app/) 
 # Make Your Own ISO
 **Follow [These](https://dev.to/otomato_io/how-to-create-custom-debian-based-iso-4g37) Steps Its Very Very Easy**
 # How Do I Know My CPU Or GPU is Supported
