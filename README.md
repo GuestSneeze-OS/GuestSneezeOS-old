@@ -13,7 +13,7 @@
 3. A semi-modern CPU
 4. A GPU
 5. At least an 8GB USB drive (for the installer)
-6. At least 20GB of disk space
+6. At least 10GB of disk space (Main)
 
 # Authors
 - GuestSneezePlayz (Project Leader)
