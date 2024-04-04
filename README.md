@@ -34,7 +34,7 @@ AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 - then type `echo "deb [arch=$(dpkg --print-architecture)] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list > /dev/null`
 - then type after that `sudo apt update`
 - then type this `sudo apt install eggs`
-- Then Type `sudo eggs produce --basename <NAME> --standard` Replace The <NAME> With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
+- Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
 - The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
 - You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
 
