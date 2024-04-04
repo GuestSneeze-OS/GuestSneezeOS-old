@@ -36,6 +36,7 @@ How To Change It?
 AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 
 # Make Custom GuestSneezeOS Based ISO
+You Can Use Both your Main Account and Root Account To Do This!!!
 - Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
 - type in the terminal `sudo apt install curl` if curl is not installed
 - then type `curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg`
