@@ -14,13 +14,13 @@
 [![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-team.svg)](https://stand-with-ukraine.pp.ua)
 
 # About
-**GuestSneezeOS** Is An Open-source OS And Its Main Goal Is To Bring SteamOS To Both New And Old Computers. We Have Made 2 Versions GuestSneezeOS & GuestSneezeOS Lite.
+**GuestSneezeOS** Is An opensource OS And Its main Goal Is To Bring a SteamOS Like Experience To Both New And Old Computers. We Have Made 2 Versions GuestSneezeOS & GuestSneezeOS Lite.
 <br>
-Despite Our OS Being Debian Based And Not Arch Based Because Its Simpler And Supports More Applications And Supports Simpler Commands And Is More Lightweight Than The Other Operating System's
+despite our OS being Debian Based and not Arch based because its simpler to use. and its also lightweight (Mainly Because I Cant Connect To My Ethernet On My Arch Linux)
 ![SteamOS](https://upload.wikimedia.org/wikipedia/commons/5/59/KDE_Plasma_5.23_on_Steam_Deck_Desktop_screenshot.png)
 GuestSneezeOS Gives A Full SteamOS Experience For Those Looking For A Gaming Distro's
 <br>
-GuestSneezeOS Plans On Bringing Gaming To All Devices (When I Mean All Devices I Mean Laptops And Desktops). This Is Based On The Open-Source [Debian Project](https://debian.org) by the Debian team. And Was Built By Using The [Penguin Eggs Project](https://github.com/pieroproietti/penguins-eggs)
+GuestSneezeOS plans On bringing gaming to all devices (when I Mean All Devices I Mean Laptops And Desktops). This Is Based On The Open-Source [Debian Project](https://debian.org) by the Debian team. And Was Built By Using The [Penguin Eggs Project](https://github.com/pieroproietti/penguins-eggs)
 
 Features
 -
@@ -42,6 +42,8 @@ Features
 - Security Updates ✔️
 - Updates ✔️
 # Why
+Thanks To Xemulated At the ID10T Discord For Showing My Stupidity
+<br>
 Choose GuestSneezeOS If Your Laptop Doesn't Have The Best Spec's Such As An Intel CPU And GPU Eww 🤢.
 <br>
 Easy To Install Click Next A Few Times Then Type Your Root Password,Password And Username and Welcome To GuestSneezeOS
