@@ -27,6 +27,17 @@ How To Change It?
 # Supported Grahics
 AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 
+# Make Custom GuestSneezeOS Based ISO
+- Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
+- type in the terminal `sudo apt install curl` if curl is not installed
+- then type `curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg`
+- then type `echo "deb [arch=$(dpkg --print-architecture)] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list > /dev/null`
+- then type after that `sudo apt update`
+- then type this `sudo apt install eggs`
+- Then Type `sudo eggs produce --basename <NAME> --standard` Replace The <NAME> With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
+- The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
+- You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
+
 # Authors
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
