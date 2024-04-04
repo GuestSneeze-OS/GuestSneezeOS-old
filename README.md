@@ -62,5 +62,3 @@ More Info Why It Makes It Stand Out In [Here](https://github.com/GuestSneezeOS/G
 
 # Collab
 (;-;) Can You Contribute???
-<br>
-[![AmogOS](https://github.com/GuestSneezeOS-Linux/GuestSneezeOS-Linux/assets/163439609/bf789102-a3e1-443a-92e7-3d7ccfb6399d)](https://github.com/Amog-OS/AmogOS)
