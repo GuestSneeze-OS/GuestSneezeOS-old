@@ -1,8 +1,8 @@
 # GuestSneezeOS Linux
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/919e711f-a488-4b35-9581-5792b88a95f4)
 
-
 **Table Of Contents**
+- [IMPORTANT](#important)
 - [About GuestSneezeOS](#about)
 - [Features Of GuestSneezeOS](#features)
 - [Why](#why)
@@ -10,6 +10,8 @@
 - [Official Community](https://github.com/GuestSneezeOS/GuestSneezeOS/discussions)
 - [Questions](Questions)
 - [Collabs](collab)
+# IMPORTANT
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/banner-direct-team.svg)](https://stand-with-ukraine.pp.ua)
 
 # About
 **GuestSneezeOS** Is An Open-source OS And Its Main Goal Is To Bring SteamOS To Both New And Old Computers. We Have Made 2 Versions GuestSneezeOS & GuestSneezeOS Lite.
@@ -18,7 +20,7 @@ Despite Our OS Being Debian Based And Not Arch Based Because Its Simpler And Sup
 ![SteamOS](https://upload.wikimedia.org/wikipedia/commons/5/59/KDE_Plasma_5.23_on_Steam_Deck_Desktop_screenshot.png)
 GuestSneezeOS Gives A Full SteamOS Experience For Those Looking For A Gaming Distro's
 <br>
-GuestSneezeOS Plans On Bringing Gaming To All Devices (When I Mean All Devices I Mean Laptops And Desktops)
+GuestSneezeOS Plans On Bringing Gaming To All Devices (When I Mean All Devices I Mean Laptops And Desktops). This Is Based On The Open-Source [Debian Project](https://debian.org) by the Debian team. And Was Built By Using The [Penguin Eggs Project](https://github.com/pieroproietti/penguins-eggs)
 
 Features
 -
