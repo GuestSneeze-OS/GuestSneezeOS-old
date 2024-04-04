@@ -10,7 +10,7 @@
 
 
 # Requirements
-- 1.UEFI Enable Firmware (not legacy)
+- 1. UEFI Enable Firmware (not legacy)
 - 2. At least 2GB of RAM
 - 3. A semi-modern CPU (Dual Core)
 - 4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
