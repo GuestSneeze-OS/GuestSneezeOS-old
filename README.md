@@ -10,19 +10,22 @@
 
 
 # Requirements
-1.UEFI Enable Firmware (not legacy)
-2. At least 2GB of RAM
-3. A semi-modern CPU (Dual Core)
-4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
-5. At least an 8GB USB drive (for the installer)
-6. At least 10GB of disk space (Main)
+- 1.UEFI Enable Firmware (not legacy)
+- 2. At least 2GB of RAM
+- 3. A semi-modern CPU (Dual Core)
+- 4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
+- 5. At least an 8GB USB drive (for the installer)
+- 6. At least 10GB of disk space (Main)
 
 # Passwords
 The Live ISO's Password is evolution (Why We Also Don't Know) 
 <br>
 How To Change It?
 - Boot Into The Installer And Install it in "Text Mode" (This is the only supported format we have been able to install guestsneezeos successfully)
-- Just Follow The Onscreen Instructions Then You Will See To Change The User,Root And Passwords 
+- Just Follow The Onscreen Instructions Then You Will See To Change The User,Root And Passwords
+
+# Supported Grahics
+AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 
 # Authors
 - GuestSneezePlayz (Project Leader)
