@@ -14,8 +14,7 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS**, a [**Debian-based**](https://www.debian.org/derivatives/) Linux distribution inspired by [**The Other SteamOS Clones**](https://github.com/ChimeraOS/chimeraos/wiki/OS-Comparison), prioritizes performance and simplicity for gaming.Preinstalled with [Steam](https://steam.fandom.com/wiki/Steam), it offers access to a vast game library. With full access to [Debian](https://www.debian.org/) and [SteamOS](https://en.wikipedia.org/wiki/SteamOS) resources, users enjoy stable gaming experiences and access to a wide range of software. Moreover, GuestSneezeOS comes preinstalled with [Wine](https://www.winehq.org/) and [Discord](https://discord.com/), enhancing its versatility for gaming and communication needs. Its user-friendly interface and stability make it ideal for gamers on various hardware setups. **GuestSneezeOS** also offers a Lite version featuring the [**LXDE**](https://lxde.org) environment, providing users with a lightweight and efficient desktop experience tailored to modest hardware configurations and comes with the same things preinstalled with the main version but with a lighter desktop enviorment
-
+**GuestSneezeOS**, a [**Debian-based**](https://www.debian.org/derivatives/) Linux distribution inspired by [**The Other SteamOS Clones**](https://github.com/ChimeraOS/chimeraos/wiki/OS-Comparison), prioritizes performance and simplicity for gaming.Preinstalled with [Steam](https://steam.fandom.com/wiki/Steam), it offers access to a vast game library. With full access to [Debian](https://www.debian.org/) and [SteamOS](https://en.wikipedia.org/wiki/SteamOS) resources, users enjoy stable gaming experiences and access to a wide range of software. Moreover, GuestSneezeOS comes preinstalled with [Wine](https://www.winehq.org/) and [Discord](https://discord.com/), enhancing its versatility for gaming and communication needs. Its user-friendly interface and stability make it ideal for gamers on various hardware setups. **GuestSneezeOS** also offers a Lite version featuring the [**LXDE**](https://lxde.org) environment, providing users with a lightweight and efficient desktop experience tailored to modest hardware configurations and comes with the same things preinstalled with the main version but with a lighter desktop enviorment.
 
 # Requirements
 - 1. UEFI Enable Firmware (not legacy)
@@ -35,6 +34,20 @@ How To Change It?
 # Supported Grahics
 AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 
+# How To Install GuestSneezeOS
+Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH5yaYI&feature=youtu.be) if you don't like reading a REAME.md File
+- Boot into the usb that has **GuestSneezeOS**
+- select The Option That Says "Text Mode" Don't Use "Live/Installation Media" it is not stable it is in HIGH development and not ready to be used
+- once your there click the left arrow key if you see a debian 12 banner why cuz it will take you to a graphical installer also known as the "Live/Installation Media" its is not stable and is on HIGH development
+- it will check if the system was used successfully it will show an [OK]. This Process Will Take 20+ Seconds
+- type into the terminal installer `sudo eggs install`
+- it will prompt a password type `evolution`
+- Click No If You Want To edit a few changes that are incorrect click yes if it is correct
+- you will see a summary click the only thing you can do is yes not no
+- it will install which will take apprx 2 minutes
+- once installed you will have a pc running guestsneezeos (The Wallpaper is default debian wallpaper due to an error well fix it soon)
+
+
 # Make Custom GuestSneezeOS Based ISO
 You Can Use Both your Main Account and Root Account To Do This!!!
 - Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
@@ -46,7 +59,6 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
 - The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
 - You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
-
 # Authors
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
