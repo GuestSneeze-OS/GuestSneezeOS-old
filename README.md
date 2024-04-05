@@ -77,11 +77,10 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - pieroproietti (Creating The Penguin Eggs Project)
 - The Debian Project (Creating The Debian Linux+GNU)
 - You? (Contribute So We Can Stop Mistakes)
+- dAKirby309 from [IconArchive.com](https://www.iconarchive.com/artist/dakirby309.html)
 
   # Used Technolegies
   
 
 ![linux-logo](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/4e622eab-ca38-4c7c-8d2b-8ae67187701c)![201-2015482_logo-debian-debian-gnu-linux(1)](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/17101561-79ef-4671-8cfe-3eed9776b9f4)![Papirus-Team-Papirus-Apps-Steam 96](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/dd3f1c46-9c2a-49f4-850a-d3f520c5a4be)
-
-
-
+![Dakirby309-Simply-Styled-OS-Android 96](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/c729c43a-402d-4392-9f27-c79243af802d)
