@@ -9,7 +9,7 @@
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
 - [Passwords](#passwords)
-- [Supported Graphics](#supported-graphics)
+- [How To Install GuestSneezeOS](#how-to-install-guestsneezeos)
 - [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
 - [Authors And Contributors](#authors)
 
@@ -30,9 +30,6 @@ The Live ISO's Password is evolution (Why We Also Don't Know)
 How To Change It?
 - Boot Into The Installer And Install it in "Text Mode" (This is the only supported format we have been able to install guestsneezeos successfully)
 - Just Follow The Onscreen Instructions Then You Will See To Change The User,Root And Passwords
-
-# Supported Grahics
-AMD,Intel,Nvidia,VirtualBox,VMware,QEMU And Gnome Boxes
 
 # How To Install GuestSneezeOS
 Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH5yaYI&feature=youtu.be) if you don't like reading a REAME.md File
