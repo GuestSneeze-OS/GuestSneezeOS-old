@@ -1,10 +1,9 @@
 # GuestSneezeOS
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
-[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white)](https://img.shields.io/badge/github-%23121011.svg?style=plastic&logo=github&logoColor=white)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Release Package Number](https://release-badges-generator.vercel.app/api/releases.svg?user=GuestSneezeOS-Official&repo=GuestSneezeOS&gradient=ff6600,ffe500)
-[![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/919e711f-a488-4b35-9581-5792b88a95f4)](https://guestsneezeos-official/guestsneezeos/releases)
-
+![RussianWarship](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/eaf22451-78b9-4dc8-bbf2-4b66862f188f)
+[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
 **TABLES OF CONTENTS**
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
