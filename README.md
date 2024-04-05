@@ -2,8 +2,8 @@
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Release Package Number](https://release-badges-generator.vercel.app/api/releases.svg?user=GuestSneezeOS-Official&repo=GuestSneezeOS&gradient=ff6600,ffe500)
-![RussianWarship](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/eaf22451-78b9-4dc8-bbf2-4b66862f188f)
-[![Stand With Ukraine](https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg)](https://stand-with-ukraine.pp.ua)
+![Untitled](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
+
 **TABLES OF CONTENTS**
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
@@ -13,7 +13,7 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS**, a [**Debian-based**](https://www.debian.org/derivatives/) Linux distribution inspired by [**The Other SteamOS Clones**](https://github.com/ChimeraOS/chimeraos/wiki/OS-Comparison), prioritizes performance and simplicity for gaming.Preinstalled with [Steam](https://steam.fandom.com/wiki/Steam), it offers access to a vast game library. With full access to [Debian](https://www.debian.org/) and [SteamOS](https://en.wikipedia.org/wiki/SteamOS) resources, users enjoy stable gaming experiences and access to a wide range of software. Moreover, GuestSneezeOS comes preinstalled with [Wine](https://www.winehq.org/) and [Discord](https://discord.com/), enhancing its versatility for gaming and communication needs. Its user-friendly interface and stability make it ideal for gamers on various hardware setups. **GuestSneezeOS** also offers a Lite version featuring the [**LXDE**](https://lxde.org) environment, providing users with a lightweight and efficient desktop experience tailored to modest hardware configurations and comes with the same things preinstalled with the main version but with a lighter desktop enviorment.
+**GuestSneezeOS**, a [**Debian-based**](https://www.debian.org/derivatives/) Linux distribution inspired by [**The Other SteamOS Clones**](https://github.com/ChimeraOS/chimeraos/wiki/OS-Comparison), prioritizes performance and simplicity for gaming.Preinstalled with [Steam](https://steam.fandom.com/wiki/Steam), it offers access to a vast game library. With full access to [Debian](https://www.debian.org/) and [SteamOS](https://en.wikipedia.org/wiki/SteamOS) resources, users enjoy stable gaming experiences and access to a wide range of software. Moreover, GuestSneezeOS comes preinstalled with [Wine](https://www.winehq.org/) and [Discord](https://discord.com/), enhancing its versatility for gaming and communication needs. Its user-friendly interface and stability make it ideal for gamers on various hardware setups. **GuestSneezeOS** also offers a Lite version featuring the [**LXDE**](https://lxde.org) environment, providing users with a lightweight and efficient desktop experience tailored to modest hardware configurations and comes with the same things preinstalled with the main version but with a lighter desktop enviorment. This Project Uses ![Shell](https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
 # Requirements
 - 1. UEFI Enable Firmware (not legacy)
@@ -46,6 +46,7 @@ Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH
 
 # Make Custom GuestSneezeOS Based ISO
 You Can Use Both your Main Account and Root Account To Do This!!!
+- before starting do not use an installed GuestSneezeOS with passwords and user accounts it will be saved in the iso for the next user 
 - Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
 - type in the terminal `sudo apt install curl` if curl is not installed
 - then type `curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg`
@@ -53,8 +54,15 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - then type after that `sudo apt update`
 - then type this `sudo apt install eggs`
 - Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
+- if you want to use an GUI version type this command `sudo eggs calamares --install` but its not recommended
 - The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
 - You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
+<br>
+<br>
+Some Notes Before ISO Creation
+- you can edit the user and passwords and other things in `/etc/penguins-eggs.d/eggs.yaml` as root with a text editor
+- If you plan on installing the generated ISO unattended (so using `krill`, the command-line Eggs ISO installer), edit the installation details in the `/etc/penguins-eggs.d/krill.yaml` file
+- 
 # Authors
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
