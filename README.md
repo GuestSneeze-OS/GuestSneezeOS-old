@@ -62,7 +62,17 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 Some Notes Before ISO Creation
 - you can edit the user and passwords and other things in `/etc/penguins-eggs.d/eggs.yaml` as root with a text editor
 - If you plan on installing the generated ISO unattended (so using `krill`, the command-line Eggs ISO installer), edit the installation details in the `/etc/penguins-eggs.d/krill.yaml` file
-- 
+
+# Supported Games
+![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white) 91% Steam Games Are Supported
+<br>
+![xbox](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white) Xbox xCloud
+<br>
+![PS3](https://img.shields.io/badge/PlayStation-003791?style=for-the-badge&logo=playstation&logoColor=white) with RPCS3
+<br>
+![Nintendo Switch](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white) with yuzu
+<br>
+![Oracle Java](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black) supports Java applications
 # Authors
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
