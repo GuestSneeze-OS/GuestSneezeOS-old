@@ -57,9 +57,6 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - if you want to use an GUI version type this command `sudo eggs calamares --install` but its not recommended
 - The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
 - You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
-<br>
-<br>
-Some Notes Before ISO Creation
 - you can edit the user and passwords and other things in `/etc/penguins-eggs.d/eggs.yaml` as root with a text editor
 - If you plan on installing the generated ISO unattended (so using `krill`, the command-line Eggs ISO installer), edit the installation details in the `/etc/penguins-eggs.d/krill.yaml` file
 
@@ -80,3 +77,11 @@ Some Notes Before ISO Creation
 - pieroproietti (Creating The Penguin Eggs Project)
 - The Debian Project (Creating The Debian Linux+GNU)
 - You? (Contribute So We Can Stop Mistakes)
+
+  # Used Technolegies
+  
+
+![linux-logo](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/4e622eab-ca38-4c7c-8d2b-8ae67187701c)![201-2015482_logo-debian-debian-gnu-linux(1)](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/17101561-79ef-4671-8cfe-3eed9776b9f4)![Papirus-Team-Papirus-Apps-Steam 96](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/dd3f1c46-9c2a-49f4-850a-d3f520c5a4be)
+
+
+
