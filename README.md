@@ -13,10 +13,27 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS** Is A Lighter Version Of SteamOS 3. This SteamOS Clone Focuses On Preformance
-# Early GuestSneezeOS 6.10TEST Screenshot
-![Screenshot from 2024-04-05 22-53-52](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/7b9e0f28-2112-43fa-a6c5-a4f5c6cd8187)
+**GuestSneezeOS** Is A Lighter Version Of SteamOS 3. This SteamOS Clone Focuses On Preformance And Simplicity. comes preinstalled with wine,steam and discord and coming soon with android app support. Heres An OS Comparison 
+|Distro Name                        |GuestSneezeOS       | ChimeraOS          | SteamOS 3.x        | HoloISO           |Nobara            |Bazzite           |
+| --------------------------------- |--------------------| ------------------ | ------------------ | ------------------|------------------|------------------|
+| Based on                          |Debian 12 & 13      | Arch Linux         | Arch Linux         | Arch Linux        | Fedora Linux     | Fedora Atomic    |
+| Desktop                           |Cinnamon            | Gnome              | KDE Plasma         | KDE Plasma        | KDE Plasma       | Gnome/KDE Plasma |
+| Distro Size                       |10 GB,2 GB Ram      |20 GB,4+GB          |32 GB HDD,4 GB+ RAM |20 GB,4 GB RAM     |20 GB,2 GB RAM    |50 GB,4+ GB RAM   |
+| Atomic updates                    |✔️                  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|:x:               |:heavy_check_mark:|
+| Read-write root filesystem        |✔️                  | :x:                | :x:                | :x:               |:heavy_check_mark:|:x:               |
+| Custom partitioning               |✔️                  | :x:                | :x:                | :x:               |:heavy_check_mark:|:x:               |
+| General hardware support          |✔️                  | :heavy_check_mark: | :x:                | :heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+| Up-to-date base packages          |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
+| Remote app installation           |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:x:               |
+| Built-in EGS & GOG support        |✔️                  | :heavy_check_mark: | :x:                | :x:               |                  |:heavy_check_mark:|
+| Built-in emulation support        |✔️ 8.10 Release     | :heavy_check_mark: | :x:                | :x:               |                  |:x:               |
+| Additional game tweaks            |:x:                 | :heavy_check_mark: | :x:                | :x:               |                  |:heavy_check_mark:|
+| Additional artwork                |:x:                 | :heavy_check_mark: | :x:                | :x:               |                  |:x:               |
+| Built-in GE Proton                |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
+| Full source publicly hosted       |:x:                 | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
 
+# Supported Commands 
+- [All Debian Commands](https://wiki.debian.org/ShellCommands)
 
 # Requirements
 - 1. UEFI Enable Firmware (not legacy)
