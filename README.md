@@ -13,8 +13,8 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS**, a [**Debian-based**](https://www.debian.org/derivatives/) Linux distribution inspired by [**The Other SteamOS Clones**](https://github.com/ChimeraOS/chimeraos/wiki/OS-Comparison), prioritizes performance and simplicity for gaming.Preinstalled with [Steam](https://steam.fandom.com/wiki/Steam), it offers access to a vast game library. With full access to [Debian](https://www.debian.org/) and [SteamOS](https://en.wikipedia.org/wiki/SteamOS) resources, users enjoy stable gaming experiences and access to a wide range of software. Moreover, GuestSneezeOS comes preinstalled with [Wine](https://www.winehq.org/) and [Discord](https://discord.com/), enhancing its versatility for gaming and communication needs. Its user-friendly interface and stability make it ideal for gamers on various hardware setups. **GuestSneezeOS** Plans on using the Calamares Installer in 7.0 YAYYYYYYY
-# Early GuestSneezeOS 6.10 Screenshot
+**GuestSneezeOS** Is A Lighter Version Of SteamOS 3. This SteamOS Clone Focuses On Preformance
+# Early GuestSneezeOS 6.10TEST Screenshot
 ![Screenshot from 2024-04-05 22-53-52](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/7b9e0f28-2112-43fa-a6c5-a4f5c6cd8187)
 
 
