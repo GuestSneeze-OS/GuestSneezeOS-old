@@ -13,7 +13,7 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS** is A lighter Version Of SteamOS 3. this SteamOS clone focuses on preformance and simplicity.Comes preinstalled with wine,steam and discord and coming soon with android app support. heres an OS comparison. I might make it Arch Linux based Like all the other SteamOS clones in 7.10
+**GuestSneezeOS** is A lighter Version Of SteamOS 3. this SteamOS clone focuses on preformance and simplicity.Comes preinstalled with wine,steam and discord and coming soon with android app support. heres an OS comparison.
 |Distro Name                        |GuestSneezeOS       | ChimeraOS          | SteamOS 3.x        | HoloISO           |Nobara            |Bazzite           |
 | --------------------------------- |--------------------| ------------------ | ------------------ | ------------------|------------------|------------------|
 | Based on                          |Debian 12 & 13      | Arch Linux         | Arch Linux         | Arch Linux        | Fedora Linux     | Fedora Atomic    |
@@ -100,8 +100,52 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - You? (Contribute So We Can Stop Mistakes)
 - dAKirby309 from [IconArchive.com](https://www.iconarchive.com/artist/dakirby309.html)
 
-  # Used Technolegies
-  
+# Supported Stuff
 
-![linux-logo](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/4e622eab-ca38-4c7c-8d2b-8ae67187701c)![201-2015482_logo-debian-debian-gnu-linux(1)](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/17101561-79ef-4671-8cfe-3eed9776b9f4)![Papirus-Team-Papirus-Apps-Steam 96](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/dd3f1c46-9c2a-49f4-850a-d3f520c5a4be)
-![Dakirby309-Simply-Styled-OS-Android 96](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/c729c43a-402d-4392-9f27-c79243af802d)
+Supported Apps
+-
+- ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+- ![UbUnTU](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+- ![Linux Mint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
+- ![tar.gz](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+- ![Lubuntu](https://img.shields.io/badge/Lubuntu-0068C8?style=for-the-badge&logo=lubuntu&logoColor=white)
+- ![Zorin](https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white)
+- ![Windows via Wine](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+- ![Pop_OS!](https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white)
+- ![Kubuntu](https://img.shields.io/badge/Kubuntu-0079C1?style=for-the-badge&logo=kubuntu&logoColor=white)
+
+Supported Computers
+-
+- Select Models ![Raspi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
+- Select Models Of ![Chromebooks](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white) Check [here](https://wiki.galliumos.org/Hardware_Compatibility) to see supported list via [GalliumOS](https://wiki.galliumos.org/Hardware_Compatibility)
+- ![Asus](https://img.shields.io/badge/acer%20laptop-83B81A?style=for-the-badge&logo=acer&logoColor=white) (UEFI)
+- Select Models Of ![Macbooks](https://img.shields.io/badge/Apple%20laptop-333333?style=for-the-badge&logo=apple&logoColor=white)
+- ![Dell](https://img.shields.io/badge/dell%20laptop-007DB8?style=for-the-badge&logo=dell&logoColor=white) (UEFI)
+- ![HP](https://img.shields.io/badge/hp%20laptop-0096D6?style=for-the-badge&logo=hp&logoColor=white) (UEFI)
+- ![Lenovo](https://img.shields.io/badge/lenovo%20laptop-E2231A?style=for-the-badge&logo=lenovo&logoColor=white) (UEFI)
+- ![MSI](https://img.shields.io/badge/MSI%20laptop-FF0000?style=for-the-badge&logo=msi&logoColor=white) (UEFI)
+-  ![Razer](https://img.shields.io/badge/razer%20laptop-44D62D?style=for-the-badge&logo=razer&logoColor=252525) (UEFI)
+- ![Samsung](https://img.shields.io/badge/samsung%20laptop-1428A0?style=for-the-badge&logo=Samsung&logoColor=white) (UEFI)
+- ![Xiami](https://img.shields.io/badge/xiaomi%20laptop-FF6900?style=for-the-badge&logo=xiaomi&logoColor=white) (UEFI)
+
+Supported Hardware
+-
+- ![AMD](https://img.shields.io/badge/AMD%20Radeon_RX_5500-ED1C24?style=for-the-badge&logo=amd&logoColor=white) (ALL AMD processors from 2012 to today
+- ![AMD1](https://img.shields.io/badge/AMD%20Ryzen_7_3800X-ED1C24?style=for-the-badge&logo=amd&logoColor=white) (ALL AMD preoccessors from 2012 to today)
+- ![I3](https://img.shields.io/badge/Intel%20Core_i5_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white) (Celeron 29500U And Above)
+- ![I7](https://img.shields.io/badge/Intel%20Core_i7_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white) (Cleron 29500U And Above)
+- ![Nvidia](https://img.shields.io/badge/NVIDIA-GTX1650-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+
+Functional Browsers
+-
+- ![Brave](https://img.shields.io/badge/Brave-FF1B2D?style=for-the-badge&logo=Brave&logoColor=white)
+- ![Firefox](https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+- ![Chrome & Chromium](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white)
+- ![Egde](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)
+
+Virtual Machines
+-
+- ![VMWare](https://img.shields.io/badge/VMware-231f20?style=for-the-badge&logo=VMware&logoColor=white)
+- ![VBOX](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white)
+- ![ProxMox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
+
