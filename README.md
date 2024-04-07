@@ -68,11 +68,6 @@ Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH
 You Can Use Both your Main Account and Root Account To Do This!!!
 - before starting do not use an installed GuestSneezeOS with passwords and user accounts it will be saved in the iso for the next user 
 - Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
-- type in the terminal `sudo apt install curl` if curl is not installed
-- then type `curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg`
-- then type `echo "deb [arch=$(dpkg --print-architecture)] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list > /dev/null`
-- then type after that `sudo apt update`
-- then type this `sudo apt install eggs`
 - Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
 - I recently got feedback from an issue from the Penguin Eggs Developer And You Can Type `sudo eggs tools skel` To Save The Current Wallpaper
 - if you want to use an GUI version type this command `sudo eggs calamares --install` but its not recommended
