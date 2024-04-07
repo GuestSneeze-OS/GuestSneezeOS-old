@@ -13,7 +13,7 @@
 - [Authors And Contributors](#authors)
 
 # About
-**GuestSneezeOS** Is A Lighter Version Of SteamOS 3. This SteamOS Clone Focuses On Preformance And Simplicity. comes preinstalled with wine,steam and discord and coming soon with android app support. Heres An OS Comparison 
+**GuestSneezeOS** is A lighter Version Of SteamOS 3. this SteamOS clone focuses on preformance and simplicity.Comes preinstalled with wine,steam and discord and coming soon with android app support. heres an OS comparison. I might make it Arch Linux based Like all the other SteamOS clones in 7.10
 |Distro Name                        |GuestSneezeOS       | ChimeraOS          | SteamOS 3.x        | HoloISO           |Nobara            |Bazzite           |
 | --------------------------------- |--------------------| ------------------ | ------------------ | ------------------|------------------|------------------|
 | Based on                          |Debian 12 & 13      | Arch Linux         | Arch Linux         | Arch Linux        | Fedora Linux     | Fedora Atomic    |
