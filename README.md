@@ -74,6 +74,7 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 - then type after that `sudo apt update`
 - then type this `sudo apt install eggs`
 - Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
+- I recently got feedback from an issue from the Penguin Eggs Developer And You Can Type `sudo eggs tools skel` To Save The Current Wallpaper
 - if you want to use an GUI version type this command `sudo eggs calamares --install` but its not recommended
 - The default username used by the `live` ISO in this case is `live`, and the password is `evolution`. The root password is the same, `evolution`.
 - You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
