@@ -2,8 +2,9 @@
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Release Package Number](https://release-badges-generator.vercel.app/api/releases.svg?user=GuestSneezeOS-Official&repo=GuestSneezeOS&gradient=ff6600,ffe500)
-![Untitled](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
-
+![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
+![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS)
+![BuildISO](https://img.shields.io/badge/Build_ISO_-Passing-green)
 **TABLES OF CONTENTS**
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
@@ -79,13 +80,13 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 # Supported Games
 ![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white) 91% Steam Games Are Supported
 <br>
-![xbox](https://img.shields.io/badge/Xbox-107C10?style=for-the-badge&logo=xbox&logoColor=white) Xbox xCloud
+![xbox](https://ziadoua.github.io/m3-Markdown-Badges/badges/Xbox/xbox1.svg) Xbox xCloud
 <br>
-![PS3](https://img.shields.io/badge/PlayStation-003791?style=for-the-badge&logo=playstation&logoColor=white) with RPCS3
+![PS3](https://ziadoua.github.io/m3-Markdown-Badges/badges/PlayStation/playstation1.svg) with RPCS3
 <br>
-![Nintendo Switch](https://img.shields.io/badge/Nintendo_Switch-E60012?style=for-the-badge&logo=nintendo-switch&logoColor=white) with yuzu
+![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
 <br>
-![Oracle Java](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=black) supports Java applications
+![Oracle Java](https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java3.svg) supports Java applications
 # Authors
 - GuestSneezePlayz (Project Leader)
 - MinecraftToGo (Contributor)
@@ -99,48 +100,19 @@ You Can Use Both your Main Account and Root Account To Do This!!!
 
 Supported Apps
 -
-- ![Debian](https://img.shields.io/badge/Debian-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-- ![UbUnTU](https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-- ![Linux Mint](https://img.shields.io/badge/Linux_Mint-87CF3E?style=for-the-badge&logo=linux-mint&logoColor=white)
-- ![tar.gz](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-- ![Lubuntu](https://img.shields.io/badge/Lubuntu-0068C8?style=for-the-badge&logo=lubuntu&logoColor=white)
-- ![Zorin](https://img.shields.io/badge/Zorin%20OS-0CC1F3?style=for-the-badge&logo=zorin&logoColor=white)
-- ![Windows via Wine](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-- ![Pop_OS!](https://img.shields.io/badge/Pop!_OS-48B9C7?style=for-the-badge&logo=Pop!_OS&logoColor=white)
-- ![Kubuntu](https://img.shields.io/badge/Kubuntu-0079C1?style=for-the-badge&logo=kubuntu&logoColor=white)
+- ![Debian](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
+- ![UbUnTU](https://ziadoua.github.io/m3-Markdown-Badges/badges/Ubuntu/ubuntu1.svg)
+- ![Linux](https://ziadoua.github.io/m3-Markdown-Badges/badges/Linux/linux1.svg)
+- ![Windows via Wine](https://ziadoua.github.io/m3-Markdown-Badges/badges/Windows/windows1.svg)
 
 Supported Computers
 -
-- Select Models ![Raspi](https://img.shields.io/badge/Raspberry%20Pi-A22846?style=for-the-badge&logo=Raspberry%20Pi&logoColor=white)
-- Select Models Of ![Chromebooks](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white) Check [here](https://wiki.galliumos.org/Hardware_Compatibility) to see supported list via [GalliumOS](https://wiki.galliumos.org/Hardware_Compatibility)
-- ![Asus](https://img.shields.io/badge/acer%20laptop-83B81A?style=for-the-badge&logo=acer&logoColor=white) (UEFI)
-- Select Models Of ![Macbooks](https://img.shields.io/badge/Apple%20laptop-333333?style=for-the-badge&logo=apple&logoColor=white)
-- ![Dell](https://img.shields.io/badge/dell%20laptop-007DB8?style=for-the-badge&logo=dell&logoColor=white) (UEFI)
-- ![HP](https://img.shields.io/badge/hp%20laptop-0096D6?style=for-the-badge&logo=hp&logoColor=white) (UEFI)
-- ![Lenovo](https://img.shields.io/badge/lenovo%20laptop-E2231A?style=for-the-badge&logo=lenovo&logoColor=white) (UEFI)
-- ![MSI](https://img.shields.io/badge/MSI%20laptop-FF0000?style=for-the-badge&logo=msi&logoColor=white) (UEFI)
--  ![Razer](https://img.shields.io/badge/razer%20laptop-44D62D?style=for-the-badge&logo=razer&logoColor=252525) (UEFI)
-- ![Samsung](https://img.shields.io/badge/samsung%20laptop-1428A0?style=for-the-badge&logo=Samsung&logoColor=white) (UEFI)
-- ![Xiami](https://img.shields.io/badge/xiaomi%20laptop-FF6900?style=for-the-badge&logo=xiaomi&logoColor=white) (UEFI)
-
-Supported Hardware
--
-- ![AMD](https://img.shields.io/badge/AMD%20Radeon_RX_5500-ED1C24?style=for-the-badge&logo=amd&logoColor=white) (ALL AMD processors from 2012 to today
-- ![AMD1](https://img.shields.io/badge/AMD%20Ryzen_7_3800X-ED1C24?style=for-the-badge&logo=amd&logoColor=white) (ALL AMD preoccessors from 2012 to today)
-- ![I3](https://img.shields.io/badge/Intel%20Core_i5_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white) (Celeron 29500U And Above)
-- ![I7](https://img.shields.io/badge/Intel%20Core_i7_10th-0071C5?style=for-the-badge&logo=intel&logoColor=white) (Cleron 29500U And Above)
-- ![Nvidia](https://img.shields.io/badge/NVIDIA-GTX1650-76B900?style=for-the-badge&logo=nvidia&logoColor=white)
+- ![Raspi](https://ziadoua.github.io/m3-Markdown-Badges/badges/RaspberryPI/raspberrypi1.svg)
+- ![Chromebooks](https://ziadoua.github.io/m3-Markdown-Badges/badges/Chrome/chrome3.svg) Check [here](https://wiki.galliumos.org/Hardware_Compatibility) to see supported list 
+- ![Windows](https://ziadoua.github.io/m3-Markdown-Badges/badges/Windows/windows1.svg) (UEFI)
+- ![Macbooks](https://ziadoua.github.io/m3-Markdown-Badges/badges/macOS/macos3.svg) (Intel)
 
 Functional Browsers
 -
-- ![Brave](https://img.shields.io/badge/Brave-FF1B2D?style=for-the-badge&logo=Brave&logoColor=white)
-- ![Firefox](https://img.shields.io/badge/Firefox_Browser-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
-- ![Chrome & Chromium](https://img.shields.io/badge/Google_chrome-4285F4?style=for-the-badge&logo=Google-chrome&logoColor=white)
-- ![Egde](https://img.shields.io/badge/Microsoft_Edge-0078D7?style=for-the-badge&logo=Microsoft-edge&logoColor=white)
-
-Virtual Machines
--
-- ![VMWare](https://img.shields.io/badge/VMware-231f20?style=for-the-badge&logo=VMware&logoColor=white)
-- ![VBOX](https://img.shields.io/badge/VirtualBox-21416b?style=for-the-badge&logo=VirtualBox&logoColor=white)
-- ![ProxMox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
-
+- ![Firefox](https://ziadoua.github.io/m3-Markdown-Badges/badges/Firefox/firefox1.svg)
+- ![Chrome & Chromium](https://ziadoua.github.io/m3-Markdown-Badges/badges/Chrome/chrome1.svg)
