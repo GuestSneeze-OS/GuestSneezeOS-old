@@ -45,24 +45,18 @@
 - 6. At least 11GB of disk space (GuestSneezeOS 6.10 not GuestSneezeOS 6)
 
 # Passwords
-The Live ISO's Password is evolution (Why We Also Don't Know) 
-<br>
-How To Change It?
-- Boot Into The Installer And Install it in "Text Mode" (This is the only supported format we have been able to install guestsneezeos successfully)
-- Just Follow The Onscreen Instructions Then You Will See To Change The User,Root And Passwords
+
+|GuestSneezeOS Ver   | Username           | Passwords          |
+|--------------------| ------------------ | ------------------ |
+|7.10-?              | gamer              | gaming             |
+|6.0.0-7.0.0         | live               | evolution          |
 
 # How To Install GuestSneezeOS
-Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH5yaYI&feature=youtu.be) if you don't like reading a REAME.md File
-- Boot into the usb that has **GuestSneezeOS**
-- select The Option That Says "Text Mode" Don't Use "Live/Installation Media" it is not stable it is in HIGH development and not ready to be used
-- once your there click the left arrow key if you see a debian 12 banner why cuz it will take you to a graphical installer also known as the "Live/Installation Media" its is not stable and is on HIGH development
-- it will check if the system was used successfully it will show an [OK]. This Process Will Take 20+ Seconds
-- type into the terminal installer `sudo eggs install`
-- it will prompt a password type `evolution`
-- Click No If You Want To edit a few changes that are incorrect click yes if it is correct
-- you will see a summary click the only thing you can do is yes not no
-- it will install which will take apprx 2 minutes
-- once installed you will have a pc running guestsneezeos (The Wallpaper is default debian wallpaper due to an error well fix it soon)
+Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH5yaYI&feature=youtu.be) To Install 6.0.0 - 7.0.0
+- 1.Select Text Mode In The GRUB Boot
+- 2.Login With The User As `gamer` or `root`
+- 3.It Will Prompt A Password type if you set the user as `gamer` Then Use `gaming` If The You Chose `root` type `root`
+- 4.Type the Command if you chose `gamer` do `sudo eggs install` if you chose `root` you can do `sudo eggs install` or `eggs install`  
 
 
 # Make Custom GuestSneezeOS Based ISO
