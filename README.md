@@ -13,6 +13,8 @@
 - [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
 - [Authors And Contributors](#authors)
 
+> ⚠️ This Project Is In Its Early Stages If You Are Installing Versions Before 13.0 Then You Should Listen To This Warning
+
 # About
 **GuestSneezeOS** is A lighter Version Of SteamOS 3. this SteamOS clone focuses on preformance and simplicity.Comes preinstalled with wine,steam and discord and coming soon with android app support. heres an OS comparison.
 |Distro Name                        |GuestSneezeOS       | ChimeraOS          | SteamOS 3.x        | HoloISO           |Nobara            |Bazzite           |
