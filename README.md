@@ -18,7 +18,7 @@
 
 
 > [!TIP]
-> Remember SDA Is The C: Drive And SDB Is D: Drive Make Sure To Use The Drive You Want To Install It In (Not In FlashDrive)
+> To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10 Or Above
 
 
 
