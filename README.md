@@ -13,10 +13,6 @@
 - [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
 - [Authors And Contributors](#authors)
 
-> [!WARNING]  
-> This Projects Is In Its EARLY STAGES and there Will Be Alot Of TE Versions (Also Known As TEST Versions) It Is HIGHLY Recommended To Use Stable Versions.
-
-
 > [!TIP]
 > To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10 Or Above
 
