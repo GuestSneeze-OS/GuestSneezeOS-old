@@ -13,6 +13,11 @@
 - [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
 - [Authors And Contributors](#authors)
 
+
+
+> [!NOTE]  
+> There Are A Few Bugs So Please Report Them By Using GuestSneezeOS 7.10 Or Above on a PC Or VM
+
 > [!TIP]
 > To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10 Or Above
 
