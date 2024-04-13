@@ -3,8 +3,8 @@
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Release Package Number](https://release-badges-generator.vercel.app/api/releases.svg?user=GuestSneezeOS-Official&repo=GuestSneezeOS&gradient=ff6600,ffe500)
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
-![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS)
-![BuildISO](https://img.shields.io/badge/Build_ISO_-Passing-green)
+![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) ![BuildISO](https://img.shields.io/badge/Build_ISO_-Passing-green)
+<br>
 **TABLES OF CONTENTS**
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
@@ -13,30 +13,17 @@
 - [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
 - [Authors And Contributors](#authors)
 
-> ⚠️ This Project Is In Its Early Stages If You Are Installing Versions Before 13.0 Then You Should Listen To This Warning
+> [!WARNING]  
+> This Projects Is In Its EARLY STAGES and there Will Be Alot Of TE Versions (Also Known As TEST Versions) It Is HIGHLY Recommended To Use Stable Versions.
+
+
+> [!TIP]
+> Remember SDA Is The C: Drive And SDB Is D: Drive Make Sure To Use The Drive You Want To Install It In (Not In FlashDrive)
+
+
 
 # About
-**GuestSneezeOS** is A lighter Version Of SteamOS 3. this SteamOS clone focuses on preformance and simplicity.Comes preinstalled with wine,steam and discord and coming soon with android app support. heres an OS comparison.
-|Distro Name                        |GuestSneezeOS       | ChimeraOS          | SteamOS 3.x        | HoloISO           |Nobara            |Bazzite           |
-| --------------------------------- |--------------------| ------------------ | ------------------ | ------------------|------------------|------------------|
-| Based on                          |Debian 12 & 13      | Arch Linux         | Arch Linux         | Arch Linux        | Fedora Linux     | Fedora Atomic    |
-| Desktop                           |Cinnamon            | Gnome              | KDE Plasma         | KDE Plasma        | KDE Plasma       | Gnome/KDE Plasma |
-| Distro Size                       |11 GB,2 GB Ram      |20 GB,4+GB          |32 GB HDD,4 GB+ RAM |20 GB,4 GB RAM     |20 GB,2 GB RAM    |50 GB,4+ GB RAM   |
-| Atomic updates                    |✔️                  | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:|:x:               |:heavy_check_mark:|
-| Read-write root filesystem        |✔️                  | :x:                | :x:                | :x:               |:heavy_check_mark:|:x:               |
-| Custom partitioning               |✔️                  | :x:                | :x:                | :x:               |:heavy_check_mark:|:x:               |
-| General hardware support          |✔️                  | :heavy_check_mark: | :x:                | :heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-| Up-to-date base packages          |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
-| Remote app installation           |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:x:               |
-| Built-in EGS & GOG support        |✔️                  | :heavy_check_mark: | :x:                | :x:               |                  |:heavy_check_mark:|
-| Built-in emulation support        |✔️ 8.10 Release     | :heavy_check_mark: | :x:                | :x:               |                  |:x:               |
-| Additional game tweaks            |:x:                 | :heavy_check_mark: | :x:                | :x:               |                  |:heavy_check_mark:|
-| Additional artwork                |:x:                 | :heavy_check_mark: | :x:                | :x:               |                  |:x:               |
-| Built-in GE Proton                |✔️                  | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
-| Full source publicly hosted       |:x:                 | :heavy_check_mark: | :x:                | :x:               |:heavy_check_mark:|:heavy_check_mark:|
-
-# Supported Commands 
-- [All Debian Commands](https://wiki.debian.org/ShellCommands)
+**GuestSneezeOS** is a Linux Distribution based on Debian 12 and SteamOS 2, It uses the [Penguin-Eggs Projec](https://github.com/pieroproietti/penguins-eggs#readme) and comes with various commands such as `shutdown`,`apt` and many more Debian 12 (or before) commands.Comes Preinstalled with [Steam](https://store.steampowered.com/).This OS supports over Low-End to High-End computers Such As : [Microsoft Surface](https://www.microsoft.com/en-us/surface),[Acer Swift X 16](https://www.acer.com/us-en),and [Most Chromebooks](https://wiki.mrchromebox.tech/Supported_Devices) and more.Its an alternative to other SteamOS-Based or SteamOS-Clones For Low-End Computers such as Chromebooks.
 
 # Requirements
 - 1. UEFI Enable Firmware (not legacy)
@@ -62,6 +49,10 @@ Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH
 
 
 # Make Custom GuestSneezeOS Based ISO
+
+> [!CAUTION]
+> Sometimes The ISO's Can Get Corrupted Or Have Errors While Booting (Such As Wiping SSD And Not Booting) But This Is Rare If There Are Issues Please Report Them [Here](https://github.com/pieroproietti/penguins-eggs/issues/new)
+
 You Can Use Both your Main Account and Root Account To Do This!!!
 - before starting do not use an installed GuestSneezeOS with passwords and user accounts it will be saved in the iso for the next user 
 - Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
