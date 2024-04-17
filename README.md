@@ -32,7 +32,7 @@
 - 3. A semi-modern CPU (Dual Core)
 - 4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
 - 5. At least an 8GB USB drive (for the installer)
-- 6. At least 11GB of disk space (GuestSneezeOS 6.10 not GuestSneezeOS 6)
+- 6. At least 14GB of disk space (GuestSneezeOS 9)
 
 # Passwords
 
