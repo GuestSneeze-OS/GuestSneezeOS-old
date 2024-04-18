@@ -105,5 +105,5 @@ Functional Browsers
 - ![Firefox](https://ziadoua.github.io/m3-Markdown-Badges/badges/Firefox/firefox1.svg)
 - ![Chrome & Chromium](https://ziadoua.github.io/m3-Markdown-Badges/badges/Chrome/chrome1.svg)
 
-
-
+# Screenshots
+![Screenshot_20240418_122632](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/fcb997ca-9f1e-4efe-bc6f-84fca5b6106e)
