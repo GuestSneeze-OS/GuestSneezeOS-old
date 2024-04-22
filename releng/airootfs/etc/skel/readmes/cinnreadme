@@ -1,0 +1,7 @@
+Cinnamon currently requires speech to be enabled after login.
+We are working to correct this as soon as possible.
+You can use the following command in the CLI to enable it for now:
+
+dconf gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled true
+
+Autologin is enabled during the install.

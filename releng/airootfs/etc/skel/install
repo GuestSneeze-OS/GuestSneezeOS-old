@@ -1,0 +1,166 @@
+#!/bin/bash
+#
+# ezarcher script downloader
+# Revision: 1.5 -- by eznix (https://sourceforge.net/projects/ezarch/)
+# (GNU/General Public License version 3.0)
+# modifications by the blind computing team
+# https://github.com/blind-computing/blindarch
+#
+# ---------------------------------------
+# Define Functions:
+# ---------------------------------------
+#
+#
+handlerror () {
+  clear
+  set -uo pipefail
+  trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+}
+#
+#
+welcomer () {
+  clear
+ echo "==================================================="
+ echo "=                                                 ="
+ echo "=   EZArcher Script Downloader and Launcher       ="
+ echo "=           modified for the T-430                ="
+ echo "=                                                 ="
+ echo "=           Version 1.5  (Release)                ="
+ echo "=                                                 ="
+ echo "=          Brought to you by eznix                ="
+ echo "=    https://sourceforge.net/projects/ezarch/     ="
+ echo "=                  -=-=-=-                        ="
+ echo "=           modified by jdfthetech                ="
+ echo "=        https://github.com/jdfthetech            ="  
+ echo "==================================================="
+ echo -e " \n"
+ sleep 3
+}
+#
+#
+dwnezarchbr () {
+  clear
+
+  ./ezarch.bios
+}
+#
+#
+dwnezarchur () {
+  clear
+  #[[ -f ezarch.uefi ]] && rm ezarch.uefi
+  #wget https://sourceforge.net/projects/ezarch/files/Scripts/ezarch.uefi
+  #clear
+  #echo -e "\n"
+  #echo "ezarch.uefi Release Version Downloaded"
+  #sleep 2
+  #clear
+  #chmod +x ezarch.uefi
+  ./ezarch.uefi
+}
+#
+#
+updarchkr () {
+  clear
+  pacman -Syy
+  pacman -Sy --noconfirm archlinux-keyring
+  clear
+  echo -e "\n"
+  echo "Arch linux Keyring Updated"
+  sleep 2
+  clear
+}
+#
+#
+mainmenu () { while true
+do
+  clear
+  echo "====================================="
+  echo "=  Welcome to the T430 Arch Script  ="
+  echo "=  Choose Install Script to Launch  ="
+  echo "====================================="
+  echo ""
+  echo "  1) Update Arch linux Keyring"
+  echo "  2) Run installer for legacy system"
+  echo "  3) Run installer for U E F I system"
+  echo "  4) Adjust speaking speed"  
+
+
+  echo ""
+  echo "  X) Exit"
+  echo -e "\n"
+  read -p "Enter your choice: " option9
+  case $option9 in
+    1 ) updarchkr ;;
+    2 ) dwnezarchbr ;;
+    3 ) dwnezarchur ;;
+    4 ) speekspd ;;
+    x|X ) exit;;
+    * ) invalid ;;
+  esac
+done
+}
+# adjust speaking speed
+#
+speekspd () { while true
+  do
+  clear
+  echo "Adjust the speaking speed."
+  echo "1 is slowest while 10 is fastest."
+  echo -e "\n"
+  read -p "Select a number between 1 and 10: " userchoice 
+
+  case $userchoice in
+    1 ) echo 1 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    2 ) echo 2 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    3 ) echo 3 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    4 ) echo 4 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    5 ) echo 5 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    6 ) echo 6 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    7 ) echo 7 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    8 ) echo 8 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    9 ) echo 9 > /sys/accessibility/speakup/soft/rate; mainmenu ;;
+    10 ) echo 10 > /sys/accessibility/speakup/soft/rate; mainmenu ;;    
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+
+#
+#
+ROOTUSER () {
+  if [[ "$EUID" = 0 ]]; then
+    continue
+  else
+    echo "Please Run As Root"
+    sleep 2
+    exit
+  fi
+}
+#
+#
+ROOTUSER
+handlerror
+welcomer
+mainmenu
+#
+#
+done
+#
+#
+# Disclaimer:
+#
+# THIS SOFTWARE IS PROVIDED BY EZNIX “AS IS” AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL EZNIX BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+#
+# END
+#

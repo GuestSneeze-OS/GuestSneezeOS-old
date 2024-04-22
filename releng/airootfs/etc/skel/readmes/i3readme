@@ -1,0 +1,7 @@
+i3 is installed with speach enabled by default.
+In addition we enable autologin to prevent screen reader accesibility issues.
+
+There is a special file called vol added to /usr/bin in this release.
+This file allows the mapping of volume adjustment in the i3 config.
+
+

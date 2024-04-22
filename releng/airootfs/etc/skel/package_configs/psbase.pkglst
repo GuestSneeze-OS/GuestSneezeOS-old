@@ -1,0 +1,1 @@
+base base-devel linux-lts linux-firmware sysfsutils e2fsprogs efibootmgr dosfstools mtools mkinitcpio dhcpcd inetutils netctl grub os-prober device-mapper cryptsetup gptfdisk nano nvme-cli less lvm2 dialog reflector bash-completion

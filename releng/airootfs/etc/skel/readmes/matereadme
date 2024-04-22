@@ -1,0 +1,15 @@
+MATE is installed with speach enabled by default.
+In addition we enable autologin to prevent screen reader accesibility issues.
+
+MATE does not set keybinds in the default install.
+You may change keybinds for the environment by accessing the following menus:
+
+Applications arrow right twice to System down once to Preferences
+right once to Hardware right once then down twice to Keyboard Shortcuts
+
+You may change accesibility settings by accessing the following menus:
+
+Applications arrow right twice to System down once to Preferences
+right once to Hardware down four times to Personal right once and down twice
+to Assistive Technologies
+
