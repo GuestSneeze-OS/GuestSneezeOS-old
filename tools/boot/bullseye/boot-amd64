@@ -1,2 +1,0 @@
-#!/bin/bash
-. $BASEDIR/tools/boot/$DI_CODENAME/boot-x86
