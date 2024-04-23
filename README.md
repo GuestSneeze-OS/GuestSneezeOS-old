@@ -52,19 +52,11 @@ Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH
 # Make Custom GuestSneezeOS Based ISO
 
 > [!CAUTION]
-> Sometimes The ISO's Can Get Corrupted Or Have Errors While Booting (Such As Wiping SSD And Not Booting) But This Is Rare If There Are Issues Please Report Them [Here](https://github.com/pieroproietti/penguins-eggs/issues/new)
-
-You Can Use Both your Main Account and Root Account To Do This!!!
-- before starting do not use an installed GuestSneezeOS with passwords and user accounts it will be saved in the iso for the next user 
-- Open A Terminal Of An Installed Version GuestSneezeOS (Install the apps you want before doing this step)
-- Then Type `sudo eggs produce --basename <NAME> --standard` Replace The `<NAME>` With The OS Name For A Liter ISO You Can Change It from `--standard` to `--max` but if you do that it will take longer (recommended on low system storage)
-- I recently got feedback from an issue from the Penguin Eggs Developer And You Can Type `sudo eggs tools skel` To Save The Current Wallpaper
-- if you want to use an GUI version type this command `sudo eggs calamares --install` but its not recommended
-- The default username used by the `live` ISO in this case is your username , and the password is your password. The root password is the same, the same as your root password.
-- You Can Find The ISO On The `/home/eggs` folder in your system (also the source code will be there too)
-- you can edit the user and passwords and other things in `/etc/penguins-eggs.d/eggs.yaml` as root with a text editor
-- If you plan on installing the generated ISO unattended (so using `krill`, the command-line Eggs ISO installer), edit the installation details in the `/etc/penguins-eggs.d/krill.yaml` file
-
+> This Requires 11 GB Minumum Free Space Storage And This Tutorial Is For GSOS11TE Or Later
+- First Install ArchISO By Doing In Terminal `sudo pacman -S archiso`
+- Create A Folder Named The OS That Your Making
+- Download The .zip and Extract releng to the Folder You Just Created
+- Open Terminal and type `cd path/to/the_folder` and `cd releng` then type `nano packages.x86_64` or if your used to vim type `vim packages.x86_64` then add the projects that are available [here](https://archlinux.org/packages/) and get the drivers from there 
 # Supported Games
 ![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white) 91% Steam Games Are Supported
 <br>
