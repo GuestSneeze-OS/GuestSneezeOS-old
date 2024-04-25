@@ -99,3 +99,5 @@ Functional Browsers
 
 # Screenshots
 ![Screenshot_20240418_122632](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/fcb997ca-9f1e-4efe-bc6f-84fca5b6106e)
+# GuestSneezeOS Based Distro
+[Jupiter Linux](https://github.com/jupiter-linux/jupiter-linux) A GuestSneezeOS And HoloISO Based Operating System It Removes Most SteamOS Holo Repo's And Replaces it with SteamOS 3.5 Jupiter Repositories Thats Why The Name Is Jupiter Linux
