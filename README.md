@@ -19,13 +19,12 @@
 > There Are A Few Bugs So Please Report Them By Using GuestSneezeOS 7.10 Or Above on a PC Or VM
 
 > [!TIP]
-> To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10 Or Above
+> To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10-10
 
 
 
 # About
-**GuestSneezeOS** is a Linux Distribution based on Debian 12 and SteamOS 2,[here is a detailed guide about GuestSneezeOS](https://guestsneezeos.gitbook.io/guestsneezeos/) It uses the [Penguin-Eggs Projec](https://github.com/pieroproietti/penguins-eggs#readme) and comes with various commands such as `shutdown`,`apt` and many more Debian 12 (or before) commands.Comes Preinstalled with [Steam](https://store.steampowered.com/).This OS supports over Low-End to High-End computers Such As : [Microsoft Surface](https://www.microsoft.com/en-us/surface),[Acer Swift X 16](https://www.acer.com/us-en),and [Most Chromebooks](https://wiki.mrchromebox.tech/Supported_Devices) and more.Its an alternative to other SteamOS-Based or SteamOS-Clones For Low-End Computers such as Chromebooks.
-
+**GuestSneezeOS** is a Linux Distribution based on Debian 12 and SteamOS 2 And On GuestSneezeOS 11 (Testing) Its Arch Linux And SteamOS 3.5
 # Requirements
 - 1. UEFI Enable Firmware (not legacy)
 - 2. At least 2GB of RAM
@@ -38,7 +37,8 @@
 
 |GuestSneezeOS Ver   | Username           | Passwords          |
 |--------------------| ------------------ | ------------------ |
-|7.10-?              | gamer              | gaming             |
+|11 (TE)-?           |gsos                |gsos                |
+|7.10-10             | gamer              | gaming             |
 |6.0.0-7.0.0         | live               | evolution          |
 
 # How To Install GuestSneezeOS
