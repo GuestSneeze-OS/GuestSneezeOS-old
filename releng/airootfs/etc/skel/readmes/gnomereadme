@@ -1,0 +1,11 @@
+Gnome is installed with speach enabled by default.
+In addition we enable autologin to prevent screen reader accesibility issues.
+
+Additional information can be found here:
+
+https://help.gnome.org/users/orca/stable/howto_the_orca_modifier.html.en
+
+Some Keybind Information:
+
+The screen reader application can be enabled or disabled with the keybind:
+ALT + SUPER + S

@@ -1,0 +1,1350 @@
+#!/bin/bash
+#
+# EZ Arch Installer - UEFI
+# Revision: 5.3 -- by eznix (https://sourceforge.net/projects/ezarch/)
+# (GNU/General Public License version 3.0)
+# modified by blindarch team
+# https://github.com/blind-computing/blindarch
+#
+# ---------------------------------------
+# Define Package Config Variables:
+# ---------------------------------------
+#
+# 
+
+I3PKGLST=$(</etc/skel/package_configs/i3.pkglst)
+PSBASEPKGLST=$(</etc/skel/package_configs/psbase.pkglst)
+XORGPKGLST=$(</etc/skel/package_configs/xorg.pkglst)
+GENPKGLST=$(</etc/skel/package_configs/gen.pkglst)
+MEDIAPKGLST=$(</etc/skel/package_configs/media.pkglst)
+NETWORKPKGLST=$(</etc/skel/package_configs/network.pkglst)
+FONTSPKGLST=$(</etc/skel/package_configs/fonts.pkglst)
+PRINTPKGLST=$(</etc/skel/package_configs/print.pkglst)
+LXQTPKGLST=$(</etc/skel/package_configs/lxqt.pkglst)
+KDEPKGLST=$(</etc/skel/package_configs/kde.pkglst)
+XFCEPKGLST=$(</etc/skel/package_configs/xfce.pkglst)
+MATEPKGLST=$(</etc/skel/package_configs/mate.pkglst)
+CINNPKGLST=$(</etc/skel/package_configs/cinn.pkglst)
+GNOMEPKGLST=$(</etc/skel/package_configs/gnome.pkglst)
+PROGRAMPKGLST=$(</etc/skel/package_configs/programming.pkglst)
+
+#
+# ---------------------------------------
+# Define Functions:
+# ---------------------------------------
+#
+#
+handlerr () {
+  clear
+  set -uo pipefail
+  trap 's=$?; echo "$0: Error on line "$LINENO": $BASH_COMMAND"; exit $s' ERR
+  clear
+}
+#
+#
+welcome () {
+  clear
+ echo "==================================================="
+ echo ""
+ echo "              U E F I Legacy Install"
+ echo "                    Main Menu"
+ echo "==================================================="
+
+ echo -e " \n"
+ sleep 4
+}
+#
+#
+hrdclck () {
+  clear
+  timedatectl set-ntp true
+  MYTMZ="$(curl -s https://ipapi.co/timezone)"
+}
+#
+#
+localestg () {
+  clear
+  LCLGET1=$(curl -s https://ipapi.co/languages | head -c 2)
+  LCLGET2=$(curl -s https://ipapi.co/country | head -c 2)
+  LCLST="${LCLGET1}"_"${LCLGET2}"
+}
+#
+#
+usrname () { 
+  clear
+  echo -e "\n"
+  read -p "Type your user name, be exact, and press Enter: " USRNAME
+  [[ -z "$USRNAME" ]] && usrname
+  clear
+  echo -e "\n"
+  echo "User name set to "${USRNAME}"..."
+  sleep 2
+  clear
+}
+#
+#
+usrpwd () { 
+  clear
+  echo -e "\n"
+  read -sp "Type your user password and press Enter: " USRPWD
+
+  echo -e "\n"
+  read -sp "Type the password again: " USRPWD2
+  
+  if [ "$USRPWD" == "$USRPWD2" ]; then  
+  	  [[ -z "$USRPWD" ]] && usrpwd
+	  echo -e "\n"
+	  echo "User password set"
+	  echo -e "\n"
+  	echo -e "moving to prior menu"
+  	sleep 4	  
+  
+  else
+  	echo -e "\n"
+  	echo -e "Passwords do not match"
+  	echo -e "\n"
+    sleep 2
+    unset USRPWD
+    usrpwd
+  	
+ 	
+  fi
+}
+#
+#
+virtbox () {
+  clear
+  echo -e "adding virtual box support"
+  pacstrap /mnt virtualbox-guest-utils virtualbox-guest-dkms
+
+}
+#
+#
+mkusersudo () {
+  clear
+  echo -e "\n"
+  read -p "Do you want to add user to sudo group, yes or no?: " MKUSERSUDO
+  echo -e "\n"  
+    case $MKUSERSUDO in
+    y|Y|yes|YES|Yes)
+    MKUSERSUDO=1
+    echo ${USRNAME}" added to sudo group."
+    sleep 2
+    ;;
+    n|N|no|NO|No)
+    MKUSERSUDO=0
+    echo ${USRNAME}" will not be added to sudo."
+    sleep 2
+    ;;
+    *)
+    echo "Invalid input..."
+    sleep 2
+    unset MKUSERSUDO
+    mkusersudo
+    ;;
+    esac
+  clear  
+}
+#
+#
+addsudo () { 
+
+  if [ "$MKUSERSUDO" == 1 ]; then
+    arch-chroot /mnt groupadd sudo
+	arch-chroot /mnt gpasswd -a "$USRNAME" sudo
+	sed -i "0,/^#\s%sudo\sALL=(ALL)\sALL/s//%sudo ALL=(ALL) ALL/" /mnt/etc/sudoers
+	echo -e "sudo user added" 
+	fi	      
+  echo -e "\n"
+
+}
+#
+#
+autologinldm () { 
+
+# these sed commands update the lightdm.conf with the proper values to autologin  
+
+  sed -i "0,/^#autologin-user=/s//autologin-user=${USRNAME}/" /mnt/etc/lightdm/lightdm.conf
+  sed -i "s/^#autologin-session=*/autologin-session=${SESSIONID}/" /mnt/etc/lightdm/lightdm.conf
+  
+# create autologin group and add user to it for lightdm.conf
+  arch-chroot /mnt groupadd -r autologin
+  arch-chroot /mnt gpasswd -a "$USRNAME" autologin  
+  echo -e "lightdm autologin enabled"
+
+}
+
+#
+#
+rtpwd () { 
+  clear
+  echo -e "\n"
+  read -sp "Type your root password and press Enter: " RTPWD
+
+  echo -e "\n"
+  read -sp "Type the password again: " RTPWD2
+  
+  if [ "$RTPWD" == "$RTPWD2" ]; then  
+  	  [[ -z "$RTPWD" ]] && rtpwd
+	  echo -e "\n"
+	  echo "Root password set"
+	  echo -e "\n"
+  	  echo -e "moving to prior menu"
+  	  sleep 4	  
+  
+  else
+  	echo -e "\n"
+  	echo -e "Passwords do not match"
+  	echo -e "\n"
+    sleep 2
+    unset RTPWD
+    rtpwd
+  	
+ 	
+  fi
+}
+#
+#
+hstname () { 
+  clear
+  echo -e "\n"
+  read -p "Type your hostname, be exact, and press Enter: " HSTNAME
+  [[ -z "$HSTNAME" ]] && hstname
+  clear
+  echo -e "\n"
+  echo "Hostname set to "${HSTNAME}"..."
+  sleep 2
+  clear
+}
+#
+#
+swapsize () {
+  clear
+  echo -e "\n"
+  read -p "Pick Swap Partition Size in Gigabytes (ex. 2, 4, 8): " SWPSIZETEMP
+  gib="GiB"
+  SWPSIZE="$SWPSIZETEMP$gib"
+# old case system 
+#    case $SWPSIZE in
+#    2|2G|2g)
+#    SWPSIZE=2GiB
+#    ;;
+#    4|4G|4g)
+#    SWPSIZE=4GiB
+#    ;;
+#    8|8G|8g)
+#    SWPSIZE=8Gib
+#    ;;
+#    *)
+#    echo "Invalid input..."
+#    sleep 2
+#    unset SWPSIZE
+#    swapsize
+#    ;;
+#    esac
+#  clear
+
+  echo -e "\n"
+  echo "SWAP Partition Set To "${SWPSIZE}""
+  sleep 2
+  clear
+}
+#
+#
+rootsize () {
+  clear
+  echo -e "\n"
+  read -p "Pick Root Partition Size in Gigabytes (ex. 20, 40, 80): " RTSIZETEMP
+  gib="GiB"
+  RTSIZE="$RTSIZETEMP$gib"
+#   case $RTSIZE in
+#   20|20G|20g)
+#   RTSIZE=20GiB
+#   ;;
+#   40|40G|40g)
+#   RTSIZE=40GiB
+#   ;;
+#   60|60G|60g)
+#   RTSIZE=60GiB
+#   ;;
+#   *)
+#   echo "Invalid input..."
+#   sleep 2
+#   unset RTSIZE
+#   rootsize
+#   ;;
+#   esac
+#  clear
+
+  echo -e "\n"
+  echo "Root Partition Set To "${RTSIZE}""
+  sleep 2
+  clear
+}
+#
+#
+trgtdrvsd () { 
+  clear
+  echo -e "Check to see the available drives: \n"
+  /bin/lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
+  echo -e "\n"
+  read -p "Type your target device (e.g. sda), be exact, and press Enter: " TRGTDRV
+  [[ -z "$TRGTDRV" ]] && trgtdrvsd
+  clear
+  echo -e "\n"
+  echo "Target device set to "${TRGTDRV}"..."
+  sleep 2
+  clear
+}
+#
+#
+trgtdrvnv () { 
+  clear
+  echo -e "Check to see the available drives: \n"
+  /bin/lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
+  echo -e "\n"
+  read -p "Type your target device (e.g. nvme0n1), be exact, and press Enter: " TRGTDRV
+  [[ -z "$TRGTDRV" ]] && trgtdrvnv
+  clear
+  echo -e "\n"
+  echo "Target device set to "${TRGTDRV}"..."
+  sleep 2
+  clear
+}
+#
+# https://linux.die.net/man/8/sgdisk
+# A start or end value of 0 specifies the default value, which is the start of the largest available block for the start sector and the end of the same block for the end sector. A partnum value of 0 causes the program to use the first available partition number. 
+#
+mkpartsd () {
+  clear
+  dd bs=512 if=/dev/zero of=/dev/"${TRGTDRV}" count=8192
+  dd bs=512 if=/dev/zero of=/dev/"${TRGTDRV}" count=8192 seek=$((`blockdev --getsz /dev/"${TRGTDRV}"` - 8192))
+  sgdisk -og /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+650MiB -t 0:ef00 -c 0:efi /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+"${SWPSIZE}" -t 0:8200 -c 0:swap /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+"${RTSIZE}" -t 0:8303 -c 0:root /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:0 -t 0:8302 -c 0:home /dev/"${TRGTDRV}"
+  clear
+  echo -e "\n"
+  echo "Partitions created..."
+  sleep 2
+  clear
+}
+#
+#
+frmtpartsd () {
+  clear
+  mkswap -L swap /dev/"${TRGTDRV}"\2
+  mkfs.fat -F32 /dev/"${TRGTDRV}"\1
+  mkfs.ext4 -L root /dev/"${TRGTDRV}"\3
+  mkfs.ext4 -L home /dev/"${TRGTDRV}"\4
+  clear
+  echo -e "\n"
+  echo "Partitions formatted..."
+  sleep 2
+  clear
+}
+#
+#
+mntpartsd () {
+  clear
+  mount /dev/"${TRGTDRV}"\3 /mnt
+  mkdir /mnt/efi
+  mount /dev/"${TRGTDRV}"\1 /mnt/efi
+  mkdir /mnt/home
+  mount /dev/"${TRGTDRV}"\4 /mnt/home
+  swapon /dev/"${TRGTDRV}"\2
+  clear
+  echo -e "\n"
+  echo "Mounted partitions..."
+  sleep 2
+  clear
+}
+#
+#
+mkpartnv () {
+  clear
+  dd bs=512 if=/dev/zero of=/dev/"${TRGTDRV}" count=8192
+  dd bs=512 if=/dev/zero of=/dev/"${TRGTDRV}" count=8192 seek=$((`blockdev --getsz /dev/"${TRGTDRV}"` - 8192))
+  sgdisk -og /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+650MiB -t 0:ef00 -c 0:efi /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+"${SWPSIZE}" -t 0:8200 -c 0:swap /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:+"${RTSIZE}" -t 0:8303 -c 0:root /dev/"${TRGTDRV}"
+  sgdisk -n 0:0:0 -t 0:8302 -c 0:home /dev/"${TRGTDRV}"
+  clear
+  echo -e "\n"
+  echo "Partitions created..."
+  sleep 2
+  clear
+}
+#
+#
+frmtpartnv () {
+  clear
+  mkswap -L swap /dev/"${TRGTDRV}"\p2
+  mkfs.fat -F32 /dev/"${TRGTDRV}"\p1
+  mkfs.ext4 -L root /dev/"${TRGTDRV}"\p3
+  mkfs.ext4 -L home /dev/"${TRGTDRV}"\p4
+  clear
+  echo -e "\n"
+  echo "Partitions formatted..."
+  sleep 2
+  clear
+}
+#
+#
+mntpartnv () {
+  clear
+  mount /dev/"${TRGTDRV}"\p3 /mnt
+  mkdir /mnt/efi
+  mount /dev/"${TRGTDRV}"\p1 /mnt/efi
+  mkdir /mnt/home
+  mount /dev/"${TRGTDRV}"\p4 /mnt/home
+  swapon /dev/"${TRGTDRV}"\p2
+  clear
+  echo -e "\n"
+  echo "Mounted partitions..."
+  sleep 2
+  clear
+}
+#
+#
+psbase () {
+  clear
+  pacstrap /mnt $PSBASEPKGLST
+  clear
+  echo -e "\n"
+  echo "Pacstrap base system complete..."
+  sleep 2
+  clear
+}
+#
+#
+mkfstab () {
+  clear
+  genfstab -U /mnt >> /mnt/etc/fstab
+  clear
+}
+#
+#
+syshstnm () {
+  clear
+  echo ""${HSTNAME}"" > /mnt/etc/hostname
+  echo "127.0.0.1          localhost" >> /mnt/etc/hosts
+  echo "::1          localhost" >> /mnt/etc/hosts
+  echo "127.0.1.1          "${HSTNAME}".localdomain "${HSTNAME}"" >> /mnt/etc/hosts
+  clear
+}
+#
+#
+syslocale () {
+  clear
+  echo ""${LCLST}".UTF-8 UTF-8" >> /mnt/etc/locale.gen
+  echo "LANG="${LCLST}".UTF-8" > /mnt/etc/locale.conf
+  arch-chroot /mnt locale-gen
+  arch-chroot /mnt localectl set-locale LANG="${LCLST}".UTF-8
+  clear
+}
+#
+#
+sysusrpwd () {
+  clear
+  arch-chroot /mnt useradd -mU -s /bin/bash -G sys,log,network,floppy,scanner,power,rfkill,users,video,storage,optical,lp,audio,wheel,adm "${USRNAME}"
+  arch-chroot /mnt chpasswd <<< ""${USRNAME}":"${USRPWD}""
+  arch-chroot /mnt chpasswd <<< "root:"${RTPWD}""
+  clear
+}
+#
+#
+systmzone () {
+  clear
+  arch-chroot /mnt hwclock --systohc --utc
+  arch-chroot /mnt timedatectl set-ntp true
+  arch-chroot /mnt rm -rf /etc/localtime
+  arch-chroot /mnt ln -sf /usr/share/zoneinfo/"${MYTMZ}" /etc/localtime
+  clear
+}
+#
+#
+sysconfig () {
+  clear
+  echo -e "\n"
+  echo "Basic system config completed..."
+  sleep 2
+  clear
+}
+#
+#
+instgrub () {
+  clear
+  echo -e "\n"
+  arch-chroot /mnt grub-install --target=x86_64-efi --efi-directory=/efi --bootloader-id=GRUB --recheck
+  arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
+  arch-chroot /mnt mkinitcpio -p linux-lts
+  clear
+  echo -e "\n"
+  echo "Grub installed & mkinicpio run..."
+  sleep 2
+  clear
+}
+#
+#
+instxorg () {
+  clear
+  pacstrap /mnt $XORGPKGLST
+  clear
+  echo -e "\n"
+  echo "Xorg installed installed..."
+  sleep 2
+  clear
+}
+#
+#
+instgen () {
+  clear
+  pacstrap /mnt $GENPKGLST
+  sleep 2
+  arch-chroot /mnt systemctl enable haveged.service
+  clear
+  echo -e "\n"
+  echo "General packages installed..."
+  sleep 2
+  clear
+}
+#
+#
+
+instprog () {
+  clear
+  pacstrap /mnt $PROGRAMPKGLST
+  sleep 2
+  arch-chroot /mnt systemctl enable haveged.service
+  clear
+  echo -e "\n"
+  echo "Programming items installed..."
+  sleep 2
+  clear
+}
+
+#
+#
+instmedia () {
+  clear
+  pacstrap /mnt $MEDIAPKGLST
+  clear
+  echo -e "\n"
+  echo "Multimedia packages installed..."
+  sleep 2
+  clear
+}
+#
+#
+instnet () {
+  clear
+  pacstrap /mnt $NETWORKPKGLST
+  sleep 2
+  arch-chroot /mnt systemctl enable NetworkManager.service
+  clear
+  echo -e "\n"
+  echo "Networking packages installed..."
+  sleep 2
+  clear
+}
+#
+#
+instfonts () {
+  clear
+  pacstrap /mnt $FONTSPKGLST
+  clear
+  echo -e "\n"
+  echo "Fonts packages installed..."
+  sleep 2
+  clear
+}
+#
+#
+instprint () {
+  clear
+  pacstrap /mnt $PRINTPKGLST
+  sleep 2
+  arch-chroot /mnt systemctl enable cups.service
+  clear
+  echo -e "\n"
+  echo "Printing packages installed..."
+  sleep 2
+  clear
+}
+#
+#
+#instlxqt () {
+# clear
+# pacstrap /mnt $LXQTPKGLST
+# sleep 2
+# arch-chroot /mnt systemctl enable sddm.service
+# clear
+# echo -e "\n"
+# echo "LXQt desktop installed..."
+# sleep 2
+# clear
+#}
+#
+#
+#instkde () {
+#clear
+# pacstrap /mnt $KDEPKGLST
+# sleep 2
+# arch-chroot /mnt systemctl enable sddm.service
+# clear
+# echo -e "\n"
+# echo "KDE Plasma desktop installed..."
+# sleep 2
+# clear
+#}
+
+instxfce () {
+  clear
+  pacstrap /mnt $XFCEPKGLST
+  sleep 2
+# setup lightdm service
+  arch-chroot /mnt systemctl enable lightdm.service
+# copy greeter file - this is so we can enable orca later and turn off autologin   
+  cp /etc/skel/lightdm-gtk-greeter.conf /mnt/etc/lightdm
+  
+# set session name and run autologin function  
+#  SESSIONID="xfce"
+#  autologinldm
+#  echo -e "\n"
+#  sleep 1
+
+# add user to sudo if selected
+  addsudo 
+  echo -e "\n"
+  sleep 1
+#
+# accessibility support of XFCE needs enabled manually:
+# getting an error here but it still seems to enable, not sure the cause yet
+
+#echo "updating xconf-query"
+
+#arch-chroot /mnt xfconf-query -c xfce4-session -n -t bool -p /general/StartAssistiveTechnologies -s true
+
+# xfce has a bug in the  /etc/xdg/autostart/orca-autostart.desktop  we need to modify the following line:
+# OnlyShowIn=Gnome;MATE;Unity;Cinnamon;
+
+#echo "modifying /etc/xdg/autostart/orca-autostart.desktop to enable xfce"
+
+#sed -i "0,/^OnlyShowIn=GNOME;MATE;Unity;Cinnamon;/s//OnlyShowIn=GNOME;MATE;Unity;Cinnamon;xfce;/" /mnt/etc/xdg/autostart/orca-autostart.desktop
+
+  sleep 2
+  echo -e "\n"
+  echo "XFCE desktop installed..."
+  sleep 2
+  clear
+}
+#
+#
+instmate () {
+
+  clear
+  pacstrap /mnt $MATEPKGLST
+  sleep 2  
+# setup lightdm service
+  arch-chroot /mnt systemctl enable lightdm.service
+
+# copy greeter file - this is so we can enable orca later and turn off autologin   
+  cp /etc/skel/lightdm-gtk-greeter.conf /mnt/etc/lightdm
+  
+# set session name and run autologin function  
+#  SESSIONID="mate"
+#  autologinldm
+#  echo -e "\n"
+#  sleep 1
+
+# add user to sudo if selected
+  addsudo 
+  echo -e "\n"
+  sleep 1
+#
+# okay dconf sucks so we gotta do it like this:
+# sudo -u $USER dbus-launch --exit-with-session gsettings set [ .... ]
+#
+# the following dconf settings turn on all the accessibility services in mate for the user:
+#  echo -e "Using sudo to set dconf settings as user"
+#  echo -e "\n"
+#  echo "enabling reader in dconf:"
+#  echo -e "\n"
+#  arch-chroot /mnt sudo -u ${USRNAME} dbus-launch --exit-with-session gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled true
+#  echo "enabling accessibility in dconf:"
+#  echo -e "\n"  
+#  arch-chroot /mnt sudo -u ${USRNAME} dbus-launch --exit-with-session gsettings set org.mate.interface accessibility true
+#  echo "enabling visual startup in dconf:"
+#  echo -e "\n"  
+#  arch-chroot /mnt sudo -u ${USRNAME} dbus-launch --exit-with-session gsettings set org.mate.applications-at-visual startup true
+  
+#  echo "Accessibility services enabled"
+#  echo -e "\n"
+#  echo "Mate desktop installation complete"
+#  sleep 4
+#  clear
+}
+#
+#
+insti3 () {
+  clear
+  pacstrap /mnt $I3PKGLST
+  echo "i3 packages installed"
+  sleep 5
+  arch-chroot /mnt systemctl enable lightdm.service
+  echo "lightdm enabled"
+  sleep 5
+  clear
+  echo "pushing custom config files for i3"
+  arch-chroot /mnt mkdir /home/"$USRNAME"/.config
+  arch-chroot /mnt mkdir /home/"$USRNAME"/.config/i3
+  arch-chroot /mnt mkdir /home/"$USRNAME"/.themes      
+  arch-chroot /mnt mkdir /home/"$USRNAME"/Pictures
+  cp /etc/skel/i3/config /mnt/home/"$USRNAME"/.config/i3  
+  cp /etc/skel/i3/ElectricArchBackground.png /mnt/home/"$USRNAME"/Pictures/ElectricArchBackground.png
+  cp /etc/skel/i3/purpleSpace.jpg /mnt/home/"$USRNAME"/Pictures/purpleSpace.jpg
+  cp /etc/skel/i3/Darkaneon_Purple.tar.gz /mnt//home/"$USRNAME"/.themes/Darkaneon_Purple.tar.gz
+  cp -r /etc/skel/i3/terminator /mnt/home/"$USRNAME"/.config
+#  cp -r /etc/skel/speech-dispatcher /mnt/home/"$USRNAME"/.config
+  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"
+#  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"/.config
+#  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"/.config/i3
+#  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"/.themes
+#  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"/terminator
+#  arch-chroot /mnt chown -R "$USRNAME" /home/"$USRNAME"/Pictures
+  cp /etc/skel/vol /mnt/usr/bin
+# enable auto logon in lightdm.conf
+
+# set session name and run autologin function  
+#  SESSIONID="i3"
+#  autologinldm
+#  echo -e "\n"
+#  sleep 1
+  
+# add user to sudo if selected
+  addsudo 
+  echo -e "\n"
+  sleep 1
+
+# copy greeter file - this is so we can enable orca later and turn off autologin  
+  cp /etc/skel/lightdmfiles/lightdm-gtk-greeter.conf /mnt/etc/lightdm
+#  arch-chroot /mnt systemctl enable espeakup.service
+  echo -e "\n"  
+  echo "i3 installation complete"
+  sleep 5
+  clear
+}
+
+instcinn () {
+  clear
+  pacstrap /mnt $CINNPKGLST
+  sleep 2
+
+# setup lightdm service
+  arch-chroot /mnt systemctl enable lightdm.service 
+
+  #espeakup enable 
+#  arch-chroot /mnt systemctl enable espeakup.service
+
+# the following dconf settings should turn on screen reader in cinnamon for the user however it is not working:
+#  echo -e "Using sudo to set dconf settings as user"
+#  echo -e "\n"
+#  echo "enabling reader in dconf:"
+#  echo -e "\n"
+#  arch-chroot /mnt sudo -u ${USRNAME} dbus-launch --exit-with-session gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled true  
+
+# copy greeter file - this is so we can enable orca later and turn off autologin   
+#  cp /etc/skel/lightdm-gtk-greeter.conf /mnt/etc/lightdm
+
+#  arch-chroot /mnt systemctl enable gdm.service
+
+# set session name and run autologin function  
+#  SESSIONID="cinnamon"
+#  autologinldm
+#  echo -e "\n"
+#  sleep 1
+
+# add user to sudo if selected
+  addsudo 
+  echo -e "\n"
+  sleep 1
+  
+
+
+  echo -e "\n"
+  echo "Cinnamon desktop installed..."
+  sleep 2
+  clear
+ }
+#
+#
+instgnome () {
+  clear
+  pacstrap /mnt $GNOMEPKGLST
+  sleep 2
+
+# setup lightdm service
+  arch-chroot /mnt systemctl enable lightdm.service
+
+# copy greeter file - this is so we can enable orca later and turn off autologin   
+#  cp /etc/skel/lightdm-gtk-greeter.conf /mnt/etc/lightdm
+
+#  arch-chroot /mnt systemctl enable gdm.service
+
+# set session name and run autologin function  
+#  SESSIONID="gnome"
+#  autologinldm
+#  echo -e "\n"
+#  sleep 1
+
+# add user to sudo if selected
+  addsudo 
+  echo -e "\n"
+  sleep 1
+
+# the following dconf settings turn on all the accessibility services in mate for the user:
+#  echo -e "Using sudo to set dconf settings as user"
+#  echo -e "\n"
+
+#  echo "enabling reader in dconf:"
+#  echo -e "\n"
+#  arch-chroot /mnt sudo -u ${USRNAME} dbus-launch --exit-with-session gsettings set org.gnome.desktop.a11y.applications screen-reader-enabled true
+#  echo -e "\n"
+#  echo "Accessibility services enabled"
+
+
+  echo "Gnome desktop installed..."
+  sleep 2
+  clear
+}
+#
+#
+
+invalid () {
+  echo -e "\n"
+  echo "Invalid answer, Please try again"
+  sleep 2
+}
+#
+#
+make_upht () { while true
+do
+  clear
+  echo "----------------------------------"
+  echo " User Password Hostname Menu"
+  echo "----------------------------------"
+  echo ""
+  echo "  1) Create user name"
+  echo "  2) Make user password"
+  echo "  3) Add user to sudo group"
+  echo "  4) Make root password"
+  echo "  5) Make hostname"
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) usrname ;;
+    2 ) usrpwd ;;
+    3 ) mkusersudo;;
+    4 ) rtpwd ;;
+    5 ) hstname ;;
+    r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+sata_drv () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo " Partition Drive"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) Enter device name (e.g.sda)"
+  echo "  2) Choose Swap partition size"
+  echo "  3) Choose Root partition size"
+  echo "  4) Create partitions"
+  echo "  5) Format partitions"
+  echo "  6) Mount partitions"
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) trgtdrvsd ;;
+    2 ) swapsize ;;
+    3 ) rootsize ;;
+    4 ) mkpartsd ;;
+    5 ) frmtpartsd ;;
+    6 ) mntpartsd ;;
+    r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+nvme_drv () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo " Partition Drive"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) Enter device name (e.g.nvme0n1)"
+  echo "  2) Choose Swap partition size"
+  echo "  3) Choose Root partition size"
+  echo "  4) Create partitions"
+  echo "  5) Format partitions"
+  echo "  6) Mount partitions"
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) trgtdrvnv ;;
+    2 ) swapsize ;;
+    3 ) rootsize ;;
+    4 ) mkpartnv ;;
+    5 ) frmtpartnv ;;
+    6 ) mntpartnv ;;
+    r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+chdrvtype () { while true
+do
+  clear
+  echo "-----------------------------------"
+  echo " Choose SATA or NVME Disk"
+  echo "-----------------------------------"
+  echo ""
+  echo "  1) SATA Disk"
+  echo "  2) NVME Disk"
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) sata_drv ;;
+    2 ) nvme_drv ;;
+    r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+inst_soft () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo " Install Software Categories"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) Xorg"
+  echo "  2) General"
+  echo "  3) Programming"
+  echo "  4) Multimedia"
+  echo "  5) Networking"
+  echo "  6) Fonts"
+  echo "  7) Printing support"
+  echo "  8) Virtual Box Support"  
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) instxorg ;;
+    2 ) instgen ;;
+    3 ) instprog ;;    
+    4 ) instmedia ;;
+    5 ) instnet ;;
+    6 ) instfonts ;;
+    7 ) instprint ;;
+    8 ) virtbox ;;
+    r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+inst_desk () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo "       Desktop Install Menu"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) i3"
+  echo "  2) Mate"
+  echo "  3) Gnome"
+  echo "  4) Cinnamon"    
+  echo "  5) XFCE"
+  echo ""
+  echo "  N) Notes for Environments Menu"
+  echo "  P) Package List Menu"
+  echo ""
+  echo "  R) Return to menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) insti3 ;;
+    2 ) instmate ;;
+    3 ) instgnome ;;
+    4 ) instcinn ;;                
+    5 ) instxfce ;;
+	n|N ) notes_menu ;;
+  p|P ) pkg_menu ;;
+  r|R ) main_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+
+#
+# Package Notes Menu
+#
+notes_menu () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo "       Desktop Notes Menu"
+  echo "    Readme and Install Notes"
+  echo "    These Notes Pipe to less"
+  echo "     Hit Spacebar to Scroll"
+  echo "       Hit Q to Quit View"
+  echo "  Hit R to Return to This Menu"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) i3 Notes"
+  echo "  2) Mate Notes"
+  echo "  3) Gnome Notes"
+  echo "  4) Cinnamon Notes"    
+  echo "  5) XFCE"
+  echo ""
+  echo "  R) Return to Desktop Install Menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) i3readme ;;
+    2 ) matereadme ;;
+    3 ) gnomereadme ;;
+    4 ) cinnreadme ;;                
+    5 ) xfcereadme ;;
+  r|R ) inst_desk ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+
+#
+# i3 Notes 
+#
+i3readme () { while true
+  do
+  clear
+  echo "$(</etc/skel/readmes/i3readme)" | less
+  echo -e "\n"
+  read -p "R) Return to Notes Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) notes_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Mate Notes 
+#
+matereadme () { while true
+  do
+  clear
+  echo "$(</etc/skel/readmes/matereadme)" | less
+  echo -e "\n"
+  read -p "R) Return to Notes Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) notes_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Gnome Notes 
+#
+gnomereadme () { while true
+  do
+  clear
+  echo "$(</etc/skel/readmes/gnomereadme)" | less
+  echo -e "\n"
+  read -p "R) Return to Notes Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) notes_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Cinnamon Notes 
+#
+cinnreadme () { while true
+  do
+  clear
+  echo "$(</etc/skel/readmes/cinnreadme)" | less
+  echo -e "\n"
+  read -p "R) Return to Notes Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) notes_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+
+#
+# XFCE Notes 
+#
+xfcereadme () { while true
+  do
+  clear
+  echo "$(</etc/skel/readmes/xfcereadme)" | less
+  echo -e "\n"
+  read -p "R) Return to Notes Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) notes_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+#
+pkg_menu () { while true
+do
+  clear
+  echo "--------------------------------"
+  echo "       Package List Menu"
+  echo "     This list pipes to less"
+  echo "     Hit Spacebar to Scroll"
+  echo "      Hit Q to Quit View"
+  echo "   Hit R to Return to This Menu"
+  echo "--------------------------------"
+  echo ""
+  echo "  1) i3 Packages"
+  echo "  2) Mate Packages"
+  echo "  3) Gnome Packages"
+  echo "  4) Cinnamon Packages"    
+  echo "  3) XFCE"
+  echo ""
+  echo "  R) Return to Desktop Install Menu"
+  echo -e "\n"
+  read -p "Please enter your choice: " userchoice
+  case $userchoice in
+    1 ) i3pkg ;;
+    2 ) matepkg ;;
+    3 ) gnomepkg ;;
+    4 ) cinnpkg ;;                
+    5 ) xfcepkg ;;
+  r|R ) inst_desk ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+
+
+#
+# i3 Pkg List 
+#
+i3pkg () { while true
+  do
+  clear
+  echo "$(</etc/skel/package_configs/i3.pkglst)" | less
+  echo -e "\n"
+  read -p "R) Return to Package Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) pkg_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Mate Pkg List 
+#
+matepkg () { while true
+  do
+  clear
+  echo "$(</etc/skel/package_configs/mate.pkglst)" | less
+  echo -e "\n"
+  read -p "R) Return to Package Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) pkg_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Gnome Pkg List 
+#
+gnomepkg () { while true
+  do
+  clear
+  echo "$(</etc/skel/package_configs/gnome.pkglst)" | less
+  echo -e "\n"
+  read -p "R) Return to Package Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) pkg_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+# Cinnamon Pkg Notes 
+#
+cinnpkg () { while true
+  do
+  clear
+  echo "$(</etc/skel/package_configs/cinn.pkglst)" | less
+  echo -e "\n"
+  read -p "R) Return to Package Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) pkg_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+
+#
+# XFCE Pkg Notes 
+#
+xfcepkg () { while true
+  do
+  clear
+  echo "$(</etc/skel/package_configs/xfce.pkglst)" | less
+  echo -e "\n"
+  read -p "R) Return to Package Menu: " userchoice 
+
+  case $userchoice in
+    r|R ) pkg_menu ;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done	
+	
+}
+#
+#
+main_menu () { while true
+do
+  clear
+  echo "-------------------------------------"
+  echo " EZ BlindArch Installer Main Menu"
+  echo "-------------------------------------"
+  echo ""
+  echo "  1) Username, Passwords, & Hostname"
+  echo "  2) Choose Device Type & Partition Drive"
+  echo "  3) Install Base System (pacstrap)"
+  echo "  4) Set fstab hostname users time and locale"
+  echo "  5) Install Broad Categories of Software"
+  echo "  6) Choose Desktop"
+  echo "  7) Install GRUB"
+  echo ""
+  echo "  X) Exit"
+  echo -e "\n"
+  read -p "Enter your choice: " userchoice
+  case $userchoice in
+    1 ) make_upht ;;
+    2 ) chdrvtype ;;
+    3 ) psbase ;;
+    4 ) mkfstab; syshstnm; syslocale; sysusrpwd; systmzone; sysconfig ;;
+    5 ) inst_soft ;;
+    6 ) inst_desk ;;
+    7 ) instgrub ;;
+    x|X ) exit;;
+    * ) invalid ;;
+  esac
+  unset $userchoice
+done
+}
+#
+#
+ROOTUSER () {
+  if [[ "$EUID" = 0 ]]; then
+    continue
+  else
+    echo "Please Run As Root"
+    sleep 2
+    exit
+  fi
+}
+#
+#
+ROOTUSER
+handlerr
+welcome
+hrdclck
+localestg
+main_menu
+#
+#
+done
+#
+#
+# Disclaimer:
+#
+# THIS SOFTWARE IS PROVIDED BY EZNIX “AS IS” AND ANY EXPRESS OR IMPLIED
+# WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+# MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
+# EVENT SHALL EZNIX BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+# BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
+# IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+# ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+# POSSIBILITY OF SUCH DAMAGE.
+#
+# END
+#

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [ "$1" = up ]; then
+    pactl set-sink-volume @DEFAULT_SINK@ +5% && killall -SIGUSR1 i3status
+elif [ "$1" = down ]; then
+    pactl set-sink-volume @DEFAULT_SINK@ -5% && killall -SIGUSR1 i3status
+elif [ "$1" = toggle-mute ]; then
+    pactl set-sink-mute @DEFAULT_SINK@ toggle && killall -SIGUSR1 i3status
+fi
+
+canberra-gtk-play -i audio-volume-change

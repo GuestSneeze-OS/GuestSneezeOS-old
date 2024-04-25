@@ -1,0 +1,9 @@
+[Unit]
+After=livecd-talk.service
+ConditionKernelCommandLine=accessibility=on
+
+[Service]
+ExecStart=/usr/local/bin/setfont.sh
+
+[Install]
+WantedBy=multi-user.target
