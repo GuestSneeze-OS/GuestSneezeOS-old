@@ -41,14 +41,6 @@
 |7.10-10             | gamer              | gaming             |
 |6.0.0-7.0.0         | live               | evolution          |
 
-# How To Install GuestSneezeOS
-Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH5yaYI&feature=youtu.be) To Install 6.0.0 - 7.0.0
-- 1.Select Text Mode In The GRUB Boot
-- 2.Login With The User As `gamer` or `root`
-- 3.It Will Prompt A Password type if you set the user as `gamer` Then Use `gaming` If The You Chose `root` type `root`
-- 4.Type the Command if you chose `gamer` do `sudo eggs install` if you chose `root` you can do `sudo eggs install` or `eggs install`  
-
-
 # Make Custom GuestSneezeOS Based ISO
 
 > [!CAUTION]
@@ -66,38 +58,8 @@ Here is a link to a [tutorial as a video](https://www.youtube.com/watch?v=BmhSwH
 <br>
 ![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
 <br>
-![Oracle Java](https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java3.svg) supports Java applications
-# Authors
-- GuestSneezePlayz (Project Leader)
-- MinecraftToGo (Contributor)
-- Xemulat (Contributor)
-- pieroproietti (Creating The Penguin Eggs Project)
-- The Debian Project (Creating The Debian Linux+GNU)
-- You? (Contribute So We Can Stop Mistakes)
-- dAKirby309 from [IconArchive.com](https://www.iconarchive.com/artist/dakirby309.html)
+![Oracle Java](https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java3.svg) supports Java application
 
-# Supported Stuff
-
-Supported Apps
--
-- ![Debian](https://ziadoua.github.io/m3-Markdown-Badges/badges/Debian/debian1.svg)
-- ![UbUnTU](https://ziadoua.github.io/m3-Markdown-Badges/badges/Ubuntu/ubuntu1.svg)
-- ![Linux](https://ziadoua.github.io/m3-Markdown-Badges/badges/Linux/linux1.svg)
-- ![Windows via Wine](https://ziadoua.github.io/m3-Markdown-Badges/badges/Windows/windows1.svg)
-
-Supported Computers
--
-- ![Raspi](https://ziadoua.github.io/m3-Markdown-Badges/badges/RaspberryPI/raspberrypi1.svg)
-- ![Chromebooks](https://ziadoua.github.io/m3-Markdown-Badges/badges/Chrome/chrome3.svg) Check [here](https://wiki.galliumos.org/Hardware_Compatibility) to see supported list 
-- ![Windows](https://ziadoua.github.io/m3-Markdown-Badges/badges/Windows/windows1.svg) (UEFI)
-- ![Macbooks](https://ziadoua.github.io/m3-Markdown-Badges/badges/macOS/macos3.svg) (Intel)
-
-Functional Browsers
--
-- ![Firefox](https://ziadoua.github.io/m3-Markdown-Badges/badges/Firefox/firefox1.svg)
-- ![Chrome & Chromium](https://ziadoua.github.io/m3-Markdown-Badges/badges/Chrome/chrome1.svg)
-
-# Screenshots
-![Screenshot_20240418_122632](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/fcb997ca-9f1e-4efe-bc6f-84fca5b6106e)
-# GuestSneezeOS Based Distro
-[Jupiter Linux](https://github.com/jupiter-linux/jupiter-linux) A GuestSneezeOS And HoloISO Based Operating System It Removes Most SteamOS Holo Repo's And Replaces it with SteamOS 3.5 Jupiter Repositories Thats Why The Name Is Jupiter Linux
+# Supporters Of The GuestSneezeOS Project
+- [**LukeShortCloud**](https://github.com/LukeShortCloud) Creator Of [**Playtron**](https://www.playtron.one/) And [**WinesapOS**](https://github.com/LukeShortCloud/winesapOS) Helped Us Switched From Debian-based Distro to Arch Linux-based
+- [**GuestSneezeOSDev**](https://github.com/GuestSneezeOSDev) Original Creator Of **GuestSneezeOS** and [**Jupiter Linux**](https://github.com/jupiter-linux/jupiter-linux) Created The GuestSneezeOS Distro
