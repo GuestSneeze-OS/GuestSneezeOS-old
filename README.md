@@ -57,8 +57,6 @@
 ![PS3](https://ziadoua.github.io/m3-Markdown-Badges/badges/PlayStation/playstation1.svg) with RPCS3
 <br>
 ![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
-<br>
-![Oracle Java](https://ziadoua.github.io/m3-Markdown-Badges/badges/Java/java3.svg) supports Java application
 
 # Supporters Of The GuestSneezeOS Project
 - [**LukeShortCloud**](https://github.com/LukeShortCloud) Creator Of [**Playtron**](https://www.playtron.one/) And [**WinesapOS**](https://github.com/LukeShortCloud/winesapOS) Helped Us Switched From Debian-based Distro to Arch Linux-based
