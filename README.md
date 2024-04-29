@@ -6,6 +6,7 @@
 [![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/0cc05eaa-0035-4853-86f9-bd1ecb22fc94)](https://)
 
 <br>
+
 **TABLES OF CONTENTS**
 - [About GuestSneezeOS](#about)
 - [System Requirements](#requirements)
