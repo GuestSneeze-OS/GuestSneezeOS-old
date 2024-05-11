@@ -5,22 +5,16 @@
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
 [![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/0cc05eaa-0035-4853-86f9-bd1ecb22fc94)](https://)
 
-> [!NOTE]  
-> There Are A Few Bugs So Please Report Them By Using GuestSneezeOS 7.10 Or Above on a PC Or VM
-
-> [!TIP]
-> To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10-10
-
-
 # About
-**GuestSneezeOS** is a Linux Distribution based on Debian 12 and SteamOS 2 And On GuestSneezeOS 11 (Testing) Its Arch Linux And SteamOS 3.5
-# Requirements
+**GuestSneezeOS** is a lightweight gaming Linux Distribution 
+
+# Requirements 
 - 1. UEFI Enable Firmware (not legacy)
 - 2. At least 2GB of RAM
 - 3. A semi-modern CPU (Dual Core)
 - 4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
 - 5. At least an 8GB USB drive (for the installer)
-- 6. At least 14GB of disk space (GuestSneezeOS 9)
+- 6. At least 10GB of disk space (GuestSneezeOS 11)
 
 # Passwords
 
