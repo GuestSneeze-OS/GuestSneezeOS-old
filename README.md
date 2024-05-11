@@ -5,24 +5,11 @@
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
 [![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/0cc05eaa-0035-4853-86f9-bd1ecb22fc94)](https://)
 
-<br>
-
-**TABLES OF CONTENTS**
-- [About GuestSneezeOS](#about)
-- [System Requirements](#requirements)
-- [Passwords](#passwords)
-- [How To Install GuestSneezeOS](#how-to-install-guestsneezeos)
-- [Make Custom GuestSneezeOS Based ISO](#make-custom-guestsneezeos-based-iso)
-- [Authors And Contributors](#authors)
-
-
-
 > [!NOTE]  
 > There Are A Few Bugs So Please Report Them By Using GuestSneezeOS 7.10 Or Above on a PC Or VM
 
 > [!TIP]
 > To Get The Full SteamOS Experience Set Your User As `gamer` and password `gaming` in GuestSneezeOS 7.10-10
-
 
 
 # About
@@ -59,7 +46,3 @@
 ![PS3](https://ziadoua.github.io/m3-Markdown-Badges/badges/PlayStation/playstation1.svg) with RPCS3
 <br>
 ![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
-
-# Supporters Of The GuestSneezeOS Project
-- [**LukeShortCloud**](https://github.com/LukeShortCloud) Creator Of [**Playtron**](https://www.playtron.one/) And [**WinesapOS**](https://github.com/LukeShortCloud/winesapOS) Helped Us Switched From Debian-based Distro to Arch Linux-based
-- [**GuestSneezeOSDev**](https://github.com/GuestSneezeOSDev) Original Creator Of **GuestSneezeOS** and [**Jupiter Linux**](https://github.com/jupiter-linux/jupiter-linux) Created The GuestSneezeOS Distro
