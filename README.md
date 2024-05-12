@@ -27,7 +27,7 @@
 # Make Custom GuestSneezeOS Based ISO
 
 > [!CAUTION]
-> This Requires 11 GB Minumum Free Space Storage And This Tutorial Is For GSOS11TE Or Later
+> This Requires 11 GB minimum free Space Storage And This Tutorial Is For GSOS11TE Or Later
 - First Install ArchISO By Doing In Terminal `sudo pacman -S archiso`
 - Create A Folder Named The OS That Your Making
 - Download The .zip and Extract releng to the Folder You Just Created
