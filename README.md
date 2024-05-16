@@ -28,10 +28,10 @@
 
 > [!CAUTION]
 > This Requires 11 GB minimum free Space Storage And This Tutorial Is For GSOS11TE Or Later
-- First Install ArchISO By Doing In Terminal `sudo pacman -S archiso`
-- Create A Folder Named The OS That Your Making
-- Download The .zip and Extract releng to the Folder You Just Created
-- Open Terminal and type `cd path/to/the_folder` and `cd releng` then type `nano packages.x86_64` or if your used to vim type `vim packages.x86_64` then add the projects that are available [here](https://archlinux.org/packages/) and get the drivers from there 
+- use the command first `su && pacman -S devtools git make --needed`
+- then clone the archiso-git package `git clone https://aur.archlinux.org/packages/archiso-git && git clone https://github.com/GuestSneezeOS-official/GuestSneezeOS`
+- then cd into where the git made the folder and build the archiso=git it `cd /path/to/archiso-git && makepkg -si`
+- then cd back and head to the guestsneezeos folder `cd ../ && cd GuestSneezeOS` and make some changes
 # Supported Games
 ![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white) 91% Steam Games Are Supported
 <br>
