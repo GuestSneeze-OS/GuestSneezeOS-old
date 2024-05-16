@@ -1,8 +1,0 @@
-[Unit]
-Description=Set proper AMD GPU power profile
-
-[Service]
-ExecStart=/usr/bin/amd-perf-fix
-
-[Install]
-WantedBy=multi-user.target

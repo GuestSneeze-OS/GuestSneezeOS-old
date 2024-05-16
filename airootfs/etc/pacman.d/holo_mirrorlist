@@ -1,8 +1,0 @@
-# Valve SteamOS Mirrorlist
-# 1 - RU Server
-# 2 - CN/HK Server
-# 3 - IT/EU Server
-
-Server = Server = https://steamdeck-packages.steamos.cloud/archlinux-mirror/$repo/os/$arch
-Server = Server = https://steamdeck-packages.steamos.cloud/archlinux-mirror/$repo/os/$arch
-Server = Server = https://steamdeck-packages.steamos.cloud/archlinux-mirror/$repo/os/$arch
