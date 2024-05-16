@@ -1,0 +1,9 @@
+[Unit]
+After=systemd-udev-settle.service
+ConditionKernelCommandLine=setfont=on
+
+[Service]
+ExecStart=/usr/local/bin/setfont.sh
+
+[Install]
+WantedBy=multi-user.target
