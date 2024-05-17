@@ -42,5 +42,5 @@
 ![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
 
 # Support Other OS's
-use these distros they are great and we support them by submitting issues and bug fixes :
-[WinesapOS](https://github.com/LukeShortCloud/winesapOS) Since we use Winesapos as a base supporting this Linux distro means a lot to @LukeShortCloud and to us since us
+- [WinesapOS](https://github.com/LukeShortCloud/winesapOS) Since we use Winesapos as a base supporting this Linux distro means a lot to @LukeShortCloud and to us since us
+- [PlaytronOS](https://playtron.one)
