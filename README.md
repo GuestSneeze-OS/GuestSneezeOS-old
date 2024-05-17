@@ -3,7 +3,7 @@
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 ![Release Package Number](https://release-badges-generator.vercel.app/api/releases.svg?user=GuestSneezeOS-Official&repo=GuestSneezeOS&gradient=ff6600,ffe500)
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
-[![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/0cc05eaa-0035-4853-86f9-bd1ecb22fc94)](https://)
+![GitHub License](https://img.shields.io/github/license/GuestSneezeOS-Official/GuestSneezeOS) [![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/0cc05eaa-0035-4853-86f9-bd1ecb22fc94)](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/iso_build.yml)
 
 # About
 **GuestSneezeOS** is a lightweight gaming Linux Distribution 
