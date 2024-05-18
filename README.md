@@ -8,7 +8,7 @@
 **GuestSneezeOS** is a lightweight gaming Linux Distribution 
 
 # Requirements 
-- 1. UEFI Enable Firmware (not legacy)
+- 1. UEFI Enable Firmware (not legacy BIOS)
 - 2. At least 2GB of RAM
 - 3. A semi-modern CPU (Dual Core)
 - 4. An Intel Or AMD GPU (Nvidia Users Coming Soon)
@@ -19,7 +19,7 @@
 
 |GuestSneezeOS Ver   | Username           | Passwords          |
 |--------------------| ------------------ | ------------------ |
-|11 (TE)-?           |gsos                |gsos                |
+|11 (TE)-?           | none               |none                |
 |7.10-10             | gamer              | gaming             |
 |6.0.0-7.0.0         | live               | evolution          |
 
@@ -43,3 +43,4 @@
 # Support Other OS's
 - [WinesapOS](https://github.com/LukeShortCloud/winesapOS) Since we use Winesapos as a base supporting this Linux distro means a lot to @LukeShortCloud and to us since us
 - [PlaytronOS](https://playtron.one)
+- [CHAMELEON](https://github.com/CHAMELEON-Ne/CHAMELEON)
