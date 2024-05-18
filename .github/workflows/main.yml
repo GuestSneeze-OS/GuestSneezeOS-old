@@ -1,4 +1,4 @@
-name: System image build
+name: GuestSneezeOS image build
 
 env:
   REGISTRY: ghcr.io
