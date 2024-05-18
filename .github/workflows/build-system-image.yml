@@ -1,4 +1,4 @@
-name: Build ChimeraOS image
+name: Build GuestSneezeOS TE/RC image
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
