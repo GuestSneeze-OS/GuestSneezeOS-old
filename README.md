@@ -31,16 +31,7 @@
 - then clone the archiso-git package `git clone https://aur.archlinux.org/packages/archiso-git && git clone https://github.com/GuestSneezeOS-official/GuestSneezeOS`
 - then cd into where the git made the folder and build the archiso=git it `cd /path/to/archiso-git && makepkg -si`
 - then cd back and head to the guestsneezeos folder `cd ../ && cd GuestSneezeOS` and make some changes
-# Supported Games
-![Steam](https://img.shields.io/badge/Steam-000000?style=for-the-badge&logo=steam&logoColor=white) 91% Steam Games Are Supported
-<br>
-![xbox](https://ziadoua.github.io/m3-Markdown-Badges/badges/Xbox/xbox1.svg) Xbox xCloud
-<br>
-![PS3](https://ziadoua.github.io/m3-Markdown-Badges/badges/PlayStation/playstation1.svg) with RPCS3
-<br>
-![Nintendo Switch](https://ziadoua.github.io/m3-Markdown-Badges/badges/NintendoSwitch/nintendoswitch1.svg) with yuzu
+# Support Other's
+You should also check out these github operating systems
 
-# Support Other OS's
-- [WinesapOS](https://github.com/LukeShortCloud/winesapOS) Since we use Winesapos as a base supporting this Linux distro means a lot to @LukeShortCloud and to us since us
-- [PlaytronOS](https://playtron.one)
-- [CHAMELEON](https://github.com/CHAMELEON-Ne/CHAMELEON)
+[WinesapOS](https://github.com/LukeShortCloud/winesapOS) by @Lukeshortcloud
