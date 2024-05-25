@@ -30,7 +30,7 @@
 - use the command first `su && pacman -S devtools git make --needed`
 - then clone the archiso-git package `git clone https://aur.archlinux.org/packages/archiso-git && git clone https://github.com/GuestSneezeOS-official/GuestSneezeOS`
 - then cd into where the git made the folder and build the archiso=git it `cd /path/to/archiso-git && makepkg -si`
-- then cd back and head to the guestsneezeos folder `cd ../ && cd GuestSneezeOS` and make some changes
+- then cd back and head to the guestsneezeos folder `cd ../ && cd GuestSneezeOS` and make some changesh
 # Support Other's
 You should also check out these github operating systems
 
