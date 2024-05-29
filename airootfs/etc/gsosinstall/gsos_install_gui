@@ -8,7 +8,7 @@ from PyQt5.QtWidgets import QMessageBox
 import subprocess
 import time
 
-DistroName = "HoloISO"
+DistroName = "GuestSneezeOS"
 
 class WelcomePage(QWidget):
     def __init__(self, next_callback, parent=None):
@@ -148,7 +148,7 @@ class InstallationPage(QWidget):
             self.log_to_terminal(f"Username: {username}")
             self.log_to_terminal("Installing...")
 
-            command = f"holoiso_installer --drive \"{drive}\" --username \"{username}\" --password \"{root_password}\" --root_password \"{password}\""
+            command = f"guestsneezeos_installer --drive \"{drive}\" --username \"{username}\" --password \"{root_password}\" --root_password \"{password}\""
             self.process = QProcess()
             self.process.setProcessChannelMode(QProcess.MergedChannels)
             self.process.readyReadStandardOutput.connect(self.read_output)
