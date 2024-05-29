@@ -78,4 +78,4 @@ SUBVOLLOCATION=/tmp/subvol
 
     sync && udevadm trigger
     echo "Starting to bootstrap installation..."
-    holoiso_bootstrap --username "${HOLOUSER}" --password "${HOLOPASS}" --root_password "${ROOTPASS}"
+    gsos_bootstrap --username "${HOLOUSER}" --password "${HOLOPASS}" --root_password "${ROOTPASS}"
