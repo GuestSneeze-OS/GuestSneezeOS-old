@@ -5,7 +5,7 @@
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
 
 # About
-**GuestSneezeOS** is a lightweight gaming Linux Distribution 
+**GuestSneezeOS** is a Free To Use Distro made for those who want to install SteamOS on their PC
 
 # Requirements 
 - 1. UEFI Enable Firmware (not legacy BIOS)
@@ -35,3 +35,11 @@
 You should also check out these github operating systems
 
 [WinesapOS](https://github.com/LukeShortCloud/winesapOS) by @Lukeshortcloud
+- Portable
+- Arch Linux Based
+- Easy To Use
+[Jupiter Linux](https://github.com/jupiter-linux/jupiter-linux/) by @GuestSneezeOSDev
+- Arch Linux Based
+- **GuestSneezeOS** Based
+- Easy To Use
+- GUI & CLI installer
