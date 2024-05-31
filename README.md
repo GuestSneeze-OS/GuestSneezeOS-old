@@ -34,11 +34,11 @@
 # Support Other's
 You should also check out these github operating systems
 
-[WinesapOS](https://github.com/LukeShortCloud/winesapOS) by @Lukeshortcloud
+## [WinesapOS](https://github.com/LukeShortCloud/winesapOS) by @Lukeshortcloud
 - Portable
 - Arch Linux Based
 - Easy To Use
-[Jupiter Linux](https://github.com/jupiter-linux/jupiter-linux/) by @GuestSneezeOSDev
+## [Jupiter Linux](https://github.com/jupiter-linux/jupiter-linux/) by @GuestSneezeOSDev
 - Arch Linux Based
 - **GuestSneezeOS** Based
 - Easy To Use
