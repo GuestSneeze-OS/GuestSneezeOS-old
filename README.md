@@ -20,7 +20,7 @@
 |GuestSneezeOS Ver   | Username           | Passwords          |
 |--------------------| ------------------ | ------------------ |
 |1.0                 | root               | root               |
-|1.0                 | guestsneezeos      | guestsneezeos      |
+|1.0                 |liveuser            | holoconfig         |
 # Make Custom GuestSneezeOS Based ISO
 
 > [!CAUTION]
