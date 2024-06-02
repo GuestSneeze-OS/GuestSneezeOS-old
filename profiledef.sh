@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="$(cat /tmp/currentcandidate)"
+iso_name="GuestSneezeOS"
 iso_label="GSOS_$(date --date="@${SOURCE_DATE_EPOCH:-$(date +%s)}" +%Y%m)"
 iso_publisher="GuestSneezeOSDev"
 iso_application="SteamOS Live/Rescue CD/DVD"
