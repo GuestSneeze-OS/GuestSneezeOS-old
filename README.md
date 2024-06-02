@@ -19,10 +19,8 @@
 
 |GuestSneezeOS Ver   | Username           | Passwords          |
 |--------------------| ------------------ | ------------------ |
-|11 (TE)-?           | none               |none                |
-|7.10-10             | gamer              | gaming             |
-|6.0.0-7.0.0         | live               | evolution          |
-
+|1.0                 | root               | root               |
+|1.0                 | guestsneezeos      | guestsneezeos      |
 # Make Custom GuestSneezeOS Based ISO
 
 > [!CAUTION]
