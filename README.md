@@ -74,3 +74,4 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 | SteamOS for PS4 |	2022-03-09 |	2022-03-25        |
 | HoloISO	| 2022-04-21	| 2022-05-01 |
 | GuestSneezeOS | 2024-05-1 | 2024-06-2 |
+|LuncheonOS | 2024-03-14 | Unkown |
