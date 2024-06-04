@@ -6,6 +6,8 @@
 - [System Requirements](##Requirements)
 - [Passwords](##Passwords)
 - [SteamOS based Distro's](##SteamOS-based-Distros)
+- [Gaming Support](##Gaming-Support)
+- [Comparison with SteamOS](##Comparison-with-SteamOS)
 # GuestSneezeOS
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
@@ -27,20 +29,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - Easy to build
 - Steam Deck look and feel (Gamescope provided)
 - KDE Plasma desktop environment is used for ricing (also SteamOS uses it)
-- Compatible file systems
-- APFS
-- Bcachefs
-- Btrfs
-- ext2, ext3, and ext4
-- exFAT
-- F2FS
-- FAT12, FAT16, and FAT32
-- HFS and HFS+
-- NFS
-- NTFS
-- OverlayFS
-- ReiserFS
-- SquashFS
+- Compatible Many file systems
 ## Apple Macbook support
 | Hardware	|Supported|	Third-Party Driver(s) |
 |-----------|---------|-----------------------|
@@ -75,3 +64,34 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 | HoloISO	| 2022-04-21	| 2022-05-01 |
 | GuestSneezeOS | 2024-05-1 | 2024-06-2 |
 |LuncheonOS | 2024-03-14 | Unkown |
+
+## Gaming Support
+DOSBox for running 16-bit DOS and Windows (via Wine) applications.
+Game launchers:
+Steam.
+Heroic Games Launcher for Epic Games Store games.
+Lutris for all other games.
+Open Gamepad UI for an open source video game console experience.
+Prism Launcher for vanilla and modded Minecraft: Java Edition.
+Bottles for all Windows programs.
+EmuDeck for video game console emulators.
+- Wine:
+- 1. Proton is installed along with Steam for playing Windows games on Linux.
+- 2. GE-Proton is installed along with the ProtonUp-Qt package manager for it. This provides better Windows games compatibility.
+-Game launchers:
+- Steam. (Ofcourse it comes preinstalled)
+- Lutris for all other games.
+- Gamescope for a gaming session
+- Opengamepadui for a gaming session
+## Comparison with SteamOS
+|Features            |SteamOS 3.x|GuestSneezeOS 2 |
+|--------------------|-----------|----------------|
+|Arch Linux packages|	    Old    |    New         |
+|Boot compatibility |	    UEFI	 |UEFI and legacy BIOS|
+|Graphics drivers   |	AMD        |	AMD, Gnome Boxes, Intel, NVIDIA, Parallels, VirtualBox, VMware And QEMU |
+|Read-only file system|	Yes      |	No |
+|Encrypted file system|No	       | No  |
+|Package managers (CLI)|	flatpak and nix |	pacman, flatpak and SteamCMD |
+|Package managers (GUI)|	Discover (flatpak)|	Discover (flatpak) ,Steam and Lutris|
+|Game launchers        | Steam	| Steam, Lutris, Open Gamepad UI|
+|Linux kernels	       |Neptune (6.5)	| Linux (6.9.3) |
