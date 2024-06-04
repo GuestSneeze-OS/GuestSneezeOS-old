@@ -7,7 +7,7 @@
 - [Passwords](##Passwords)
 - [SteamOS based Distro's](##SteamOS-based-Distros)
 - [Gaming Support](##Gaming-Support)
-- [Comparison with SteamOS](##Comparison-with-SteamOS)
+- [Comparison with SteamOS](##-Comparison-with-SteamOS)
 # GuestSneezeOS
 ![GuestSneezeOS](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/05a2442c-cedc-4bf5-9f73-71d5c1098aaf)
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
