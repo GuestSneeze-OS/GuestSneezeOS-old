@@ -95,3 +95,8 @@ EmuDeck for video game console emulators.
 |Package managers (GUI)|	Discover (flatpak)|	Discover (flatpak) ,Steam and Lutris|
 |Game launchers        | Steam	| Steam, Lutris, Open Gamepad UI|
 |Linux kernels	       |Neptune (6.5)	| Linux (6.9.3) |
+
+# Screenshots
+<img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
+<img width="638" alt="GuestSneezeOS Screenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/47f98f31-7d2f-4604-9a9d-9b1621b03a19">
+
