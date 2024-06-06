@@ -66,13 +66,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 |LuncheonOS | 2024-03-14 | Unkown |
 
 ## Gaming Support
-DOSBox for running 16-bit DOS and Windows (via Wine) applications.
-Game launchers:
-Steam.
-Heroic Games Launcher for Epic Games Store games.
-Lutris for all other games.
 Open Gamepad UI for an open source video game console experience.
-Prism Launcher for vanilla and modded Minecraft: Java Edition.
 Bottles for all Windows programs.
 EmuDeck for video game console emulators.
 - Wine:
