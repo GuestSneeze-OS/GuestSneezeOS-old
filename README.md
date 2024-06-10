@@ -85,7 +85,7 @@ EmuDeck for video game console emulators.
 |Graphics drivers   |	AMD        |	AMD, Gnome Boxes, Intel, NVIDIA, Parallels, VirtualBox, VMware And QEMU |
 |Read-only file system|	Yes      |	No |
 |Encrypted file system|No	       | No  |
-|Package managers (CLI)|	flatpak and nix |	pacman, flatpak and SteamCMD |
+|Package managers (CLI)|	flatpak and nix |	pacman, flatpak , yay and SteamCMD |
 |Package managers (GUI)|	Discover (flatpak)|	Discover (flatpak) ,Steam and Lutris|
 |Game launchers        | Steam	| Steam, Lutris, Open Gamepad UI|
 |Linux kernels	       |Neptune (6.5)	| Linux (6.9.3) |
