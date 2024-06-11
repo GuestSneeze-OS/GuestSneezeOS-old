@@ -94,3 +94,9 @@ EmuDeck for video game console emulators.
 <img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
 <img width="638" alt="GuestSneezeOS Screenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/47f98f31-7d2f-4604-9a9d-9b1621b03a19">
 
+# Driver Support
+Support's Different Drivers
+- ![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white) (NVIDIA GPU)
+- 	![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white) (STEAMDECK)
+- 	![Playstation 4](https://img.shields.io/badge/Playstation%204-003791?style=for-the-badge&logo=playstation-4&logoColor=white) (PS4Linux Coming soon)
+- 	
