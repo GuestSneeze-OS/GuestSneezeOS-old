@@ -16,7 +16,10 @@ Table of contents
       * [Passwords](##Passwords)
       * [SteamOS Based Distros](##SteamOS-based-Distros)
    * [Gaming Support](#Gaming-support)
-      * [Comparison with SteamOS](##Comparison-with-SteamOS) 
+      * [Comparison with SteamOS](##Comparison-with-SteamOS)
+   * [How to Dualboot](#How-To-dualboot)
+      * [Dualbooting With Windows](##Windows-Preperation-For-Dualbooting)
+      * [Dualbooting](##Dualbooting)
 <!--te-->
 
 ## Linux vs MacOS
@@ -94,6 +97,20 @@ EmuDeck for video game console emulators.
 |Package managers (GUI)|	Discover (flatpak)|	Discover (flatpak) ,Steam and Lutris|
 |Game launchers        | Steam	| Steam, Lutris, Open Gamepad UI|
 |Linux kernels	       |Neptune (6.5)	| Linux (6.9.3) |
+
+# How To Dualboot
+This are a few guides on how to Dualboot GuestSneezeOS with Windows
+
+## Windows Preperation For Dualbooting
+- If Bitlocker is turned On then turn it off
+- If Secure Boot is Turned On Turn it Off
+- Create (Minumum 20 GB) Partition with Disk Management
+- Right Click on the C: Partition
+- Shrink Volume and select how much size should GuestSneezeOS Have (Minumum 20 GB)
+
+## Dualbooting
+- Boot into the Live USB
+- Once booted install it and select the Drive that you created (sda is C: and sdb is D:)
 
 # Screenshots
 <img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
