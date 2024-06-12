@@ -59,11 +59,10 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 ## SteamOS based  Distros
 |Distro	| First Preview	| First Public Release |
 |-------|---------------|----------------------|
-|winesapOS |2022-03-06	| 2022-03-10            |
-| SteamOS for PS4 |	2022-03-09 |	2022-03-25        |
-| HoloISO	| 2022-04-21	| 2022-05-01 |
 | GuestSneezeOS | 2024-05-1 | 2024-06-2 |
-|LuncheonOS | 2024-03-14 | Unkown |
+|winesapOS |2022-03-06	| 2022-03-10    |
+| SteamOS for PS4 |	2022-03-09 |	2022-03-25 |
+| HoloISO	| 2022-04-21	| 2022-05-01 |
 
 ## Gaming Support
 Open Gamepad UI for an open source video game console experience.
