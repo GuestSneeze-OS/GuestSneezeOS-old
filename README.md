@@ -11,7 +11,6 @@ Table of contents
    * [GuestSneezeOS](#GuestSneezeOS)
       * [Linux Vs MacOS](##Linux-vs-MacOS)
       * [Features](##Features)
-      * [Macbook Support](##Apple-Macbook-support)
       * [System Reqs](##Requirements)
       * [Passwords](##Passwords)
       * [SteamOS Based Distros](##SteamOS-based-Distros)
@@ -21,6 +20,9 @@ Table of contents
       * [Dualbooting With Windows](##Windows-Preperation-For-Dualbooting)
       * [Dualbooting](##Dualbooting)
    * [Other OSS Projects](#Other-OSS)
+   * [Driver Support](#Driver-Support)
+      * [Macbook Support](##Apple-Macbook-support)
+      * [Steam Deck Support](##Stean-Deck-Support)
 <!--te-->
 
 ## Linux vs MacOS
@@ -119,6 +121,33 @@ Other OSS (Open Source Software) That we Use or has helped build the Operating S
 - [Jupiter Linux](https://github.com/jupiter-linux)
 - [WinesapOS](https://github.com/LukeShortCloud/winesapOS)
 
+# Driver Support
+Driver Support for These Devices
+
+## Apple Macbook support
+| Hardware	|Supported|	Third-Party Driver(s) |
+|-----------|---------|-----------------------|
+| Keyboard	|Yes      |	linux-t2 patches      |
+| Touchpad	|Yes      |	linux-t2 patches      |
+| NVMe	    | Yes     |	linux-t2 patches      |
+| Sound	    | Yes     |	linux-t2 patches and apple-t2-audio-config |
+| Fans | Yes | mbpfan |
+| Bluetooth	| Yes	| linux-t2 patches and apple-bcm-firmware |
+| Wi-Fi	| Yes	| broadcom-wl and apple-bcm-firmware |
+| Fingerprint scanner	| No	                    |
+| Touch Bar |	Yes	| linux-t2 patches            |
+
+## Steam Deck Support
+|Hardware	| Supported	| Third-Party Driver(s) |
+|---------|-----------|-----------------------|
+|Keyboard |	Yes	| |
+|Touchpad |	Yes |	|
+| NVMe	  | Yes	| |
+| Sound |	Yes |	linux-firmware-valve |
+|Fans	| Yes | 	|
+| Bluetooth	| Yes |	linux-firmware-valve |
+|Wi-Fi |	Yes |	linux-firmware-valve |
+| Touchscreen	| Yes	|
 # Screenshots
 <img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
 <img width="638" alt="GuestSneezeOS Screenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/47f98f31-7d2f-4604-9a9d-9b1621b03a19">
