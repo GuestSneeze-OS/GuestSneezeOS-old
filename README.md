@@ -23,6 +23,7 @@ Table of contents
    * [Driver Support](#Driver-Support)
       * [Macbook Support](##Apple-Macbook-support)
       * [Steam Deck Support](##Stean-Deck-Support)
+   * [Building GuestSneezeOS](#Building-GuestSneezeOS)
 <!--te-->
 
 ## Linux vs MacOS
@@ -136,6 +137,17 @@ Driver Support for These Devices
 | Bluetooth	| Yes |	linux-firmware-valve |
 |Wi-Fi |	Yes |	linux-firmware-valve |
 | Touchscreen	| Yes	|
-# Screenshots
-<img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
-<img width="638" alt="GuestSneezeOS Screenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/47f98f31-7d2f-4604-9a9d-9b1621b03a19">
+
+# Building GuestSneezeOS
+> [!WARNING]  
+> THIS WILL USE 12 GB OF STORAGE.
+
+> [!CAUTION]
+> I AM NOT RESPONSIBLE FOR ANY DAMAGE CAUSED ON YOUR DEVICE.
+GuestSneezeOS is built Using Archiso (There is a `build.sh` for people who do not want to use `mkarchiso`)
+1. Open Terminal And Type `git clone https://github.com/GuestSneezeOS-Official/GuestSneezeOS`
+2. Then Install Archiso to make the iso `sudo pacman -Sy archiso`
+3. once Downloaded you should have knowledge on how to use Archiso ([Video Tutorial](https://www.youtube.com/watch?v=tSGGBbJBgvk&t=31s) [Wiki](https://wiki.archlinux.org/title/archiso))
+4. Test ISO in QEMU with legacy BIOS `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso` or by using UEFI `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso`
+5. if you want LUKS encryption on your OS follow [this tutorial](https://wiki.archlinux.org/title/archiso#Encryption)
+6. If you want to use a window manager in the Live CD, you must add the necessary and correct video drivers, or the WM may freeze on loading.
