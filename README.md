@@ -42,18 +42,6 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - Steam Deck look and feel (Gamescope provided)
 - KDE Plasma desktop environment is used for ricing (also SteamOS uses it)
 - Compatible Many file systems
-## Apple Macbook support
-| Hardware	|Supported|	Third-Party Driver(s) |
-|-----------|---------|-----------------------|
-| Keyboard	|Yes      |	linux-t2 patches      |
-| Touchpad	|Yes      |	linux-t2 patches      |
-| NVMe	    | Yes     |	linux-t2 patches      |
-| Sound	    | Yes     |	linux-t2 patches and apple-t2-audio-config |
-| Fans | Yes | mbpfan |
-| Bluetooth	| Yes	| linux-t2 patches and apple-bcm-firmware |
-| Wi-Fi	| Yes	| broadcom-wl and apple-bcm-firmware |
-| Fingerprint scanner	| No	                    |
-| Touch Bar |	Yes	| linux-t2 patches            |
 ## Requirements 
 - 1. At least 2GB of RAM
 - 2. A semi-modern CPU (Dual Core)
