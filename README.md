@@ -3,6 +3,22 @@
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
 [![Linux](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)](https://img.shields.io/badge/Linux-FCC624?style=plastic&logo=linux&logoColor=black)
+
+Table of contents
+=================
+
+<!--ts-->
+   * [GuestSneezeOS](#GuestSneezeOS)
+      * [Linux Vs MacOS](##Linux-vs-MacOS)
+      * [Features](##Features)
+      * [Macbook Support](##Apple-Macbook-support)
+      * [System Reqs](##Requirements)
+      * [Passwords](##Passwords)
+      * [SteamOS Based Distros](##SteamOS-based-Distros)
+   * [Gaming Support](#Gaming-support)
+      * [Comparison with SteamOS](##Comparison-with-SteamOS) 
+<!--te-->
+
 ## Linux vs MacOS
 These are reasons why macOS is inferior compared to Linux when it comes to gaming.
 - No 32-bit support. The latest version of macOS is now 64-bit only meaning legacy native games will not run.
@@ -54,7 +70,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 | SteamOS for PS4 |	2022-03-09 |	2022-03-25 |
 | HoloISO	| 2022-04-21	| 2022-05-01 |
 
-## Gaming Support
+# Gaming Support
 Open Gamepad UI for an open source video game console experience.
 Bottles for all Windows programs.
 EmuDeck for video game console emulators.
@@ -82,10 +98,3 @@ EmuDeck for video game console emulators.
 # Screenshots
 <img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
 <img width="638" alt="GuestSneezeOS Screenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/47f98f31-7d2f-4604-9a9d-9b1621b03a19">
-
-# Driver Support
-Support's Different Drivers
-- ![nVIDIA](https://img.shields.io/badge/nVIDIA-%2376B900.svg?style=for-the-badge&logo=nVIDIA&logoColor=white) (NVIDIA GPU)
-- 	![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=for-the-badge&logo=steam&logoColor=white) (STEAMDECK)
-- 	![Playstation 4](https://img.shields.io/badge/Playstation%204-003791?style=for-the-badge&logo=playstation-4&logoColor=white) (PS4Linux Coming soon)
-- 	
