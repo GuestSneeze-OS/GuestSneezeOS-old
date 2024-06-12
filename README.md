@@ -20,6 +20,7 @@ Table of contents
    * [How to Dualboot](#How-To-dualboot)
       * [Dualbooting With Windows](##Windows-Preperation-For-Dualbooting)
       * [Dualbooting](##Dualbooting)
+   * [Other OSS Projects](#Other-OSS)
 <!--te-->
 
 ## Linux vs MacOS
@@ -111,6 +112,12 @@ This are a few guides on how to Dualboot GuestSneezeOS with Windows
 ## Dualbooting
 - Boot into the Live USB
 - Once booted install it and select the Drive that you created (sda is C: and sdb is D:)
+
+# Other OSS
+Other OSS (Open Source Software) That we Use or has helped build the Operating System
+- [ArchISOMaker](https://github.com/gsanhueza/ArchISOMaker)
+- [Jupiter Linux](https://github.com/jupiter-linux)
+- [WinesapOS](https://github.com/LukeShortCloud/winesapOS)
 
 # Screenshots
 <img width="560" alt="GuestSneezeOS Screeenshot" src="https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/214c5382-ca37-4999-94fa-e161e2ef84da">
