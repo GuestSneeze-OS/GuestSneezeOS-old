@@ -24,6 +24,7 @@ Table of contents
       * [Macbook Support](#Apple-Macbook-support)
       * [Steam Deck Support](#Stean-Deck-Support)
    * [Building GuestSneezeOS](#Building-GuestSneezeOS)
+   * [Troubleshooting](#Troubleshooting)
 <!--te-->
 
 # Linux vs MacOS
@@ -154,3 +155,11 @@ GuestSneezeOS is built Using Archiso (There is a `build.sh` for people who do no
 4. Test ISO in QEMU with legacy BIOS `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso` or by using UEFI `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso`
 5. if you want LUKS encryption on your OS follow [this tutorial](https://wiki.archlinux.org/title/archiso#Encryption)
 6. If you want to use a window manager in the Live CD, you must add the necessary and correct video drivers, or the WM may freeze on loading.
+
+# Troubleshooting
+## GuestSneezeOS not booting
+- There are many different reasons why GuestSneezeOS may not be booting.
+- Refer to WinesapOS's Detailed [Macboot](https://github.com/LukeShortCloud/winesapos/?tab=readme-ov-file#mac-boot) And [Windows boot](https://github.com/LukeShortCloud/winesapos/?tab=readme-ov-file#windows-boot)
+- If using a USB Type-C cable, try flipping it upside down (180 degrees)
+* BIOS
+   * Older motherboards that do not support GPT partition layouts will not be able to boot GuestSneezeOS. 
