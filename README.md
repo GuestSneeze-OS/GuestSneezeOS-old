@@ -9,24 +9,24 @@ Table of contents
 
 <!--ts-->
    * [GuestSneezeOS](#GuestSneezeOS)
-      * [Linux Vs MacOS](##Linux-vs-MacOS)
-      * [Features](##Features)
-      * [System Reqs](##Requirements)
-      * [Passwords](##Passwords)
-      * [SteamOS Based Distros](##SteamOS-based-Distros)
+      * [Linux Vs MacOS](#Linux-vs-MacOS)
+      * [Features](#Features)
+      * [System Reqs](#Requirements)
+      * [Passwords](#Passwords)
+      * [SteamOS Based Distros](#SteamOS-based-Distros)
    * [Gaming Support](#Gaming-support)
-      * [Comparison with SteamOS](##Comparison-with-SteamOS)
+      * [Comparison with SteamOS](#Comparison-with-SteamOS)
    * [How to Dualboot](#How-To-dualboot)
-      * [Dualbooting With Windows](##Windows-Preperation-For-Dualbooting)
-      * [Dualbooting](##Dualbooting)
+      * [Dualbooting With Windows](#Windows-Preperation-For-Dualbooting)
+      * [Dualbooting](#Dualbooting)
    * [Other OSS Projects](#Other-OSS)
    * [Driver Support](#Driver-Support)
-      * [Macbook Support](##Apple-Macbook-support)
-      * [Steam Deck Support](##Stean-Deck-Support)
+      * [Macbook Support](#Apple-Macbook-support)
+      * [Steam Deck Support](#Stean-Deck-Support)
    * [Building GuestSneezeOS](#Building-GuestSneezeOS)
 <!--te-->
 
-## Linux vs MacOS
+# Linux vs MacOS
 These are reasons why macOS is inferior compared to Linux when it comes to gaming.
 - No 32-bit support. The latest version of macOS is now 64-bit only meaning legacy native games will not run.
 - Steam Play's Proton is only supported on Linux (not macOS).
@@ -35,7 +35,7 @@ These are reasons why macOS is inferior compared to Linux when it comes to gamin
 - Linux has kernel-level optimizations for Wine.
 - CrossOver Mac, a commercial Wine product, is one of the few ways to run games on macOS. It costs money and requires a new license yearly (or a very expensive lifetime license).
 The community fork of Wine from CrossOver lacks support for some game launchers, codecs, and translation layers.
-## Features
+# Features
 - Any computer with an AMD or Intel processor can run GuestSneezeOS.
 - Compatible with different PC manufacturers
 - Compatible with both UEFI and Legacy/BIOS
@@ -43,21 +43,21 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - Steam Deck look and feel (Gamescope provided)
 - KDE Plasma desktop environment is used for ricing (also SteamOS uses it)
 - Compatible Many file systems
-## Requirements 
+# Requirements 
 - 1. At least 2GB of RAM
 - 2. A semi-modern CPU (Dual Core)
 - 3. An Intel Or AMD GPU (Nvidia Users Coming Soon)
 - 4. At least a 10GB USB drive (for the installer)
 - 5. At least 20GB of disk space (GuestSneezeOS 1)
 
-## Passwords
+# Passwords
 
 |GuestSneezeOS Ver   | Username           | Passwords          |
 |--------------------| ------------------ | ------------------ |
 |1.0                 | root               | root               |
 |1.0                 |liveuser            | holoconfig         |
 
-## SteamOS based  Distros
+# SteamOS based  Distros
 |Distro	| First Preview	| First Public Release |
 |-------|---------------|----------------------|
 | GuestSneezeOS | 2024-05-1 | 2024-06-2 |
@@ -77,7 +77,7 @@ EmuDeck for video game console emulators.
 - Lutris for all other games.
 - Gamescope for a gaming session
 - Opengamepadui for a gaming session
-## Comparison with SteamOS
+# Comparison with SteamOS
 |Features            |SteamOS 3.x|GuestSneezeOS 2 |
 |--------------------|-----------|----------------|
 |Arch Linux packages|	    Old    |    New         |
@@ -93,14 +93,14 @@ EmuDeck for video game console emulators.
 # How To Dualboot
 This are a few guides on how to Dualboot GuestSneezeOS with Windows
 
-## Windows Preperation For Dualbooting
+# Windows Preperation For Dualbooting
 - If Bitlocker is turned On then turn it off
 - If Secure Boot is Turned On Turn it Off
 - Create (Minumum 20 GB) Partition with Disk Management
 - Right Click on the C: Partition
 - Shrink Volume and select how much size should GuestSneezeOS Have (Minumum 20 GB)
 
-## Dualbooting
+# Dualbooting
 - Boot into the Live USB
 - Once booted install it and select the Drive that you created (sda is C: and sdb is D:)
 
@@ -113,7 +113,7 @@ Other OSS (Open Source Software) That we Use or has helped build the Operating S
 # Driver Support
 Driver Support for These Devices
 
-## Apple Macbook support
+# Apple Macbook support
 | Hardware	|Supported|	Third-Party Driver(s) |
 |-----------|---------|-----------------------|
 | Keyboard	|Yes      |	linux-t2 patches      |
@@ -126,7 +126,7 @@ Driver Support for These Devices
 | Fingerprint scanner	| No	                    |
 | Touch Bar |	Yes	| linux-t2 patches            |
 
-## Steam Deck Support
+# Steam Deck Support
 |Hardware	| Supported	| Third-Party Driver(s) |
 |---------|-----------|-----------------------|
 |Keyboard |	Yes	| |
