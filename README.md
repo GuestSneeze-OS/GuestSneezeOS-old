@@ -109,6 +109,9 @@ Other OSS (Open Source Software) That we Use or has helped build the Operating S
 - [ArchISOMaker](https://github.com/gsanhueza/ArchISOMaker)
 - [Jupiter Linux](https://github.com/jupiter-linux)
 - [WinesapOS](https://github.com/LukeShortCloud/winesapOS)
+- [Glorious Eggroll Proton](https://github.com/GloriousEggroll/proton-ge-custom)
+- [Gamescope](https://github.com/ValveSoftware/gamescope)
+- [OpenGamepadUI](https://github.com/ShadowBlip/OpenGamepadUI)
 
 # Driver Support
 Driver Support for These Devices
