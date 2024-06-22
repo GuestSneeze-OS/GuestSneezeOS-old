@@ -316,6 +316,9 @@ install_packages() {
     # For laptops
     packages+=' xf86-input-synaptics'
 
+    # Desktop enviorment
+    packages+=' plasma plasma-meta plasma-desktop'
+
     # Extra packages for tc4200 tablet
     #packages+=' ipw2200-fw xf86-input-wacom'
 
