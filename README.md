@@ -163,3 +163,9 @@ GuestSneezeOS is built Using Archiso (There is a `build.sh` for people who do no
 - If using a USB Type-C cable, try flipping it upside down (180 degrees)
 * BIOS
    * Older motherboards that do not support GPT partition layouts will not be able to boot GuestSneezeOS. 
+## GuestSneezeOS not being installed
+- type in terminal
+```
+cd /root/ArchScripts/
+./install.sh
+```
