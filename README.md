@@ -164,8 +164,18 @@ GuestSneezeOS is built Using Archiso (There is a `build.sh` for people who do no
 * BIOS
    * Older motherboards that do not support GPT partition layouts will not be able to boot GuestSneezeOS. 
 ## GuestSneezeOS not being installed
+- change root password and go into root
+```
+sudo passwd root && su
+```
 - type in terminal
 ```
 cd /root/ArchScripts/
 ./install.sh
 ```
+if this installer does not work try this (GuestSneezeOS 5+)
+```
+cd root/newbackup/
+bash install.sh
+```
+if it is still is not working either make your own installer or contact me
