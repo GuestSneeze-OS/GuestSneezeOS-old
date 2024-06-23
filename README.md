@@ -79,7 +79,7 @@ EmuDeck for video game console emulators.
 - Gamescope for a gaming session
 - Opengamepadui for a gaming session
 # Comparison with SteamOS
-|Features            |SteamOS 3.x|GuestSneezeOS 2 |
+|Features            |SteamOS 3.x|GuestSneezeOS 5 |
 |--------------------|-----------|----------------|
 |Arch Linux packages|	    Old    |    New         |
 |Boot compatibility |	    UEFI	 |UEFI and legacy BIOS|
