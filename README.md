@@ -172,3 +172,6 @@ cd ~/newbackup/
 sudo bash install.sh
 ```
 if it is still is not working either make your own installer or contact me
+
+# Updates
+After GuestSneezeOS 5 i will make GuestSneezeOS 6 in a longer period (2 weeks) because i want to focus on other projects as well
