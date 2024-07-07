@@ -1,4 +1,5 @@
 # GuestSneezeOS
+## THERE WILL BE AN UPDATE IN 2 WEEKS PLEASE BE PATIENT
 ![319986030-05a2442c-cedc-4bf5-9f73-71d5c1098aaf](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/32015c8f-8259-48a3-92e6-846248197867)
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
@@ -172,6 +173,3 @@ cd ~/newbackup/
 sudo bash install.sh
 ```
 if it is still is not working either make your own installer or contact me
-
-# Updates
-After GuestSneezeOS 5 i will make GuestSneezeOS 6 in a longer period (2 weeks) because i want to focus on other projects as well
