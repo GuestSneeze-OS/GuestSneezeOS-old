@@ -173,3 +173,9 @@ cd ~/newbackup/
 sudo bash install.sh
 ```
 if it is still is not working either make your own installer or contact me
+
+# System Requirements
+|GuestSneezeOS Requir|RAM/MEMORY          | Storage            |
+|--------------------| ------------------ | ------------------ |
+|Minumum             | 1.8GB              | 16-20GB            |
+|Recomended          |2GB                 | 20-26GB            |
