@@ -137,10 +137,10 @@ Driver Support for These Devices
 |Keyboard |	Yes	| |
 |Touchpad |	Yes |	|
 | NVMe	  | Yes	| |
-| Sound |	Yes |	linux-firmware-valve |
+| Sound |	Yes |	linux-firmware-valve/neptune |
 |Fans	| Yes | 	|
-| Bluetooth	| Yes |	linux-firmware-valve |
-|Wi-Fi |	Yes |	linux-firmware-valve |
+| Bluetooth	| Yes |	linux-firmware-valve/neptune |
+|Wi-Fi |	Yes |	linux-firmware-valve/neptune |
 | Touchscreen	| Yes	|
 
 # Building GuestSneezeOS
