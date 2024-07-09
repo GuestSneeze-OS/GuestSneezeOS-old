@@ -1,5 +1,5 @@
 NAME="GuestSneezeOS"
-ID="steamos"
+ID="gsos"
 ID_LIKE="arch"
 PRETTY_NAME="GuestSneezeOS"
 HOME_URL="https://github.com/GuestSneezeOS-Official/GuestSneezeOS"
