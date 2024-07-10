@@ -142,21 +142,6 @@ Driver Support for These Devices
 | Bluetooth	| Yes |	linux-firmware-valve |
 |Wi-Fi |	Yes |	linux-firmware-valve |
 | Touchscreen	| Yes	|
-
-# Building GuestSneezeOS
-> [!WARNING]  
-> THIS WILL USE 12 GB OF STORAGE.
-
-> [!CAUTION]
-> I AM NOT RESPONSIBLE FOR ANY DAMAGE CAUSED ON YOUR DEVICE.
-GuestSneezeOS is built Using Archiso (There is a `build.sh` for people who do not want to use `mkarchiso`)
-1. Open Terminal And Type `git clone https://github.com/GuestSneezeOS-Official/GuestSneezeOS`
-2. Then Install Archiso to make the iso `sudo pacman -Sy archiso`
-3. once Downloaded you should have knowledge on how to use Archiso ([Video Tutorial](https://www.youtube.com/watch?v=tSGGBbJBgvk&t=31s) [Wiki](https://wiki.archlinux.org/title/archiso))
-4. Test ISO in QEMU with legacy BIOS `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso` or by using UEFI `run_archiso -i /path/to/guestsneezeos-yyyy.mm.dd-x86_64.iso`
-5. if you want LUKS encryption on your OS follow [this tutorial](https://wiki.archlinux.org/title/archiso#Encryption)
-6. If you want to use a window manager in the Live CD, you must add the necessary and correct video drivers, or the WM may freeze on loading.
-
 # Troubleshooting
 ## GuestSneezeOS not booting
 - There are many different reasons why GuestSneezeOS may not be booting.
@@ -173,6 +158,9 @@ cd ~/newbackup/
 sudo bash install.sh
 ```
 if it is still is not working either make your own installer or contact me
-
-# Updates
-After GuestSneezeOS 5 i will make GuestSneezeOS 6 in a longer period (2 weeks) because i want to focus on other projects as well
+# How to build
+```
+git clone https://github.com/GuestSneezeOS/GuestSneezeOS/
+cd GuestSneezeOS
+./build.sh
+```
