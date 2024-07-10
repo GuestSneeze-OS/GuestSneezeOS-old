@@ -1,5 +1,5 @@
 # GuestSneezeOS
-## Full 6.0 Source Code has been built
+GuestSneezeOS is a robust, free-to-use ,lightweight,operating system designed to bring the functionality of Valve's SteamOS to a wide range of devices, including desktops, laptops, and more. We aim to support all compatible computers (please check the system requirements).
 ![319986030-05a2442c-cedc-4bf5-9f73-71d5c1098aaf](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/32015c8f-8259-48a3-92e6-846248197867)
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
@@ -47,6 +47,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - Compatible Many file systems
 # Requirements 
 - 1. At least 2GB of RAM
+  2. intel i3 or Ryzen 3 CPU('s)
 - 2. A semi-modern CPU (Dual Core)
 - 3. An Intel Or AMD GPU (Nvidia Users Coming Soon)
 - 4. At least a 10GB USB drive (for the installer)
