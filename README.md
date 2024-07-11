@@ -176,6 +176,8 @@ cd GuestSneezeOS
 ### On Debian
 ```
 sudo apt update && sudo apt upgrade -y
+mkdir ~/GuestSneezeOS
+cd ~/GuestSneezeOS
 sudo apt install debootstrap arch-install-scripts curl git
 debootstrap --arch amd64 stable ./arch https://deb.debian.org/debian/
 sudo mount --bind /dev ./arch/dev
