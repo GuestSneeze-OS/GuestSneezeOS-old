@@ -165,3 +165,31 @@ git clone https://github.com/GuestSneezeOS/GuestSneezeOS/
 cd GuestSneezeOS
 ./build.sh
 ```
+# Building GuestSneezeOS
+## On Arch Linux
+```
+sudo pacman -Sy archiso git
+git clone https://github.com/GuestSneezeOS/GuestSneezeOS/
+cd GuestSneezeOS
+./build.sh -v
+```
+### On Debian
+```
+sudo apt update && sudo apt upgrade -y
+sudo apt install debootstrap arch-install-scripts curl git
+debootstrap --arch amd64 stable ./arch https://deb.debian.org/debian/
+sudo mount --bind /dev ./arch/dev
+sudo mount --bind /proc ./arch/proc
+sudo mount --bind /sys ./arch/sys
+sudo chroot ./arch
+pacman -Syy
+pacman -S archiso git
+git clone https://github.com/GuestSneezeOS/GuestSneezeOS
+cd GuestSneezeOS
+./build.sh -v
+exit
+sudo umount ./arch/dev
+sudo umount ./arch/proc
+sudo umount ./arch/sys
+ls ~/GuestSneezeOS/out
+```
