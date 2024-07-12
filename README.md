@@ -159,12 +159,7 @@ cd ~/newbackup/
 sudo bash install.sh
 ```
 if it is still is not working either make your own installer or contact me
-# How to build
-```
-git clone https://github.com/GuestSneezeOS/GuestSneezeOS/
-cd GuestSneezeOS
-./build.sh
-```
+
 # Building GuestSneezeOS
 ## On Arch Linux
 ```
