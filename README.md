@@ -110,7 +110,6 @@ This are a few guides on how to Dualboot GuestSneezeOS with Windows
 # Other OSS
 Other OSS (Open Source Software) That we Use or has helped build the Operating System
 - [ArchISOMaker](https://github.com/gsanhueza/ArchISOMaker)
-- [Jupiter Linux](https://github.com/jupiter-linux)
 - [WinesapOS](https://github.com/LukeShortCloud/winesapOS)
 - [Glorious Eggroll Proton](https://github.com/GloriousEggroll/proton-ge-custom)
 - [Gamescope](https://github.com/ValveSoftware/gamescope)
