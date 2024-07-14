@@ -155,3 +155,7 @@ firefox
 lib32-vulkan-radeon
 lib32-vulkan-intel
 iwd
+
+# Games
+lutris
+wine-mono
