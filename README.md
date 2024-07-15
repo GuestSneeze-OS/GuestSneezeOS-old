@@ -35,7 +35,7 @@ These are reasons why macOS is inferior compared to Linux when it comes to gamin
 - Old and incomplete implementations of OpenGL 4.1 and OpenCL 1.2
 - No native Vulkan support.
 - Linux has kernel-level optimizations for Wine.
-- CrossOver Mac, a commercial Wine product, is one of the few ways to run games on macOS. It costs money and requires a new license yearly (or a very expensive lifetime license).
+- CrossOver Mac, a commercial Wine product, is one of the few ways to run games on macOS. It costs money and requires a new license yearly (or a very expensive lifetime license). Which as of today is open-source well its not open-source but it is in their [website](https://media.codeweavers.com/pub/crossover/source/)
 The community fork of Wine from CrossOver lacks support for some game launchers, codecs, and translation layers.
 # Features
 - Any computer with an AMD or Intel processor can run GuestSneezeOS.
@@ -51,7 +51,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - 2. A semi-modern CPU (Dual Core)
 - 3. An Intel Or AMD GPU (Nvidia Users Coming Soon)
 - 4. At least a 10GB USB drive (for the installer)
-- 5. At least 20GB of disk space (will use 16-18 GB depending on how much storage you have )
+- 5. At least 18GB of disk space (will use 16-18 GB depending on how much storage you have )
 
 # Passwords
 
