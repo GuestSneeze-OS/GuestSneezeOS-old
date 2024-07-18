@@ -189,3 +189,9 @@ sudo umount ./arch/proc
 sudo umount ./arch/sys
 ls ~/GuestSneezeOS/out
 ```
+
+## Supporters of the Project
+- GuestSneezeOSDev : Founder and Project leader (Builder,Designer and Coder of the Project)
+- nyxiereal : Newer README (No longer supporting the project)
+- LukeShortCloud : winesapOS (we use the repository in the `pacman.conf`)
+- Gabriel Sanhueza (gsanhueza/archisomaker) (Made the build script for GuestSneezeOS)
