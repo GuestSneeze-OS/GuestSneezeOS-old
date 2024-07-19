@@ -49,7 +49,7 @@ The community fork of Wine from CrossOver lacks support for some game launchers,
 - 1. At least 2GB of RAM
   2. intel i3 or Ryzen 3 CPU('s)
 - 2. A semi-modern CPU (Dual Core)
-- 3. An Intel Or AMD GPU (Nvidia Users Coming Soon)
+- 3. An Intel Or AMD,Nvidia GPU
 - 4. At least a 10GB USB drive (for the installer)
 - 5. At least 18GB of disk space (will use 16-18 GB depending on how much storage you have )
 
