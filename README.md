@@ -195,3 +195,84 @@ ls ~/GuestSneezeOS/out
 - nyxiereal : Newer README (No longer supporting the project)
 - LukeShortCloud : winesapOS (we use the repository in the `pacman.conf`)
 - Gabriel Sanhueza (gsanhueza/archisomaker) (Made the build script for GuestSneezeOS)
+
+## How to disable READONLY file system
+```
+sudo steamos-readonly disable
+sudo pacman-key --init
+sudo pacman-key --populate archlinux
+sudo pacman -S <package name>
+```
+Make sure to do this if you are sure about what you are doing because this might break your system I reccomend instead Flatpaks, AppImages, or Distrobox
+
+## Setting up Docker
+Enable the netfilter module:
+```
+sudo modprobe br_netfilter
+echo "br_netfilter" | sudo tee /etc/modules-load.d/netfilter.conf
+```
+Enable IP Forwarding :
+```
+sudo sysctl net.ipv4.ip_forward=1
+echo "net.ipv4.ip_forward=1" | sudo tee /etc/sysctl.d/ip_forward.conf
+```
+Create an .nspawn file We are going to create a systemd .nspawn configuration which we can use later by passing --machine name when creating containers :
+```
+sudo mkdir /etc/systemd/nspawn
+sudo nano /etc/systemd/nspawn/archlinux.nspawn
+```
+
+and when you reach the GNU Nano in this part add this code
+```
+[Exec]
+Boot=true
+Capability=all
+SystemCallFilter=add_key keyctl bpf
+Bind=/dev/fuse
+
+[Files]
+Bind=/home
+Bind=/mnt
+Bind=/etc/hosts
+Bind=/etc/passwd
+Bind=/etc/shadow
+Bind=/etc/group
+Bind=/etc/gshadow
+Bind=/etc/subgid
+Bind=/etc/subuid
+Bind=/etc/sudoers
+Bind=/etc/sudoers.d
+BindReadOnly=/etc/resolv.conf
+BindReadOnly=/tmp/.X11-unix
+```
+Also give any containers using the .nspawn access to fuse: 
+```
+sudo systemctl set-property systemd-nspawn@archlinux DeviceAllow='/dev/fuse rwm'
+```
+If you made the user directory mounts read-only, youll need to add the Docker Container on the host and/or service
+```
+sudo groupadd -r docker
+sudo usermod -aG docker deck
+sudo systemctl restart sddm
+```
+Install Docker
+```
+sudo pacman -S docker
+sudo systemctl enable docker --now
+```
+then Reenable read-only for the system not to break
+```
+sudo steamos-readonly enable
+sudo journalctl -xeu docker
+```
+you should be able to use docker without root
+```
+docker run -it --rm --name alpine alpine:latest /bin/sh
+```
+
+## Information Sources
+[Arch Wiki](https://wiki.archlinux.org/)
+[winesapOS](https://github.com/LukeShortCloud/winesapOS)
+[Root Pages](https://rootpages.lukeshort.cloud/unix_distributions/arch_linux.html)
+[Root Pages (SteamOS)](https://rootpages.lukeshort.cloud/unix_distributions/steamos.html)
+[SteamOS Guides](https://github.com/Ethorbit/SteamDeck-SteamOS-Guides/tree/main/Installing-Any-Package)
