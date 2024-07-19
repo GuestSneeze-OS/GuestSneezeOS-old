@@ -1,5 +1,5 @@
-# GuestSneezeOS
-GuestSneezeOS is a robust, free-to-use ,lightweight,operating system designed to bring the functionality of Valve's SteamOS to a wide range of devices, including desktops, laptops, and more. We aim to support all compatible computers (please check the system requirements). GuestSneezeOS is also less bloated than other distros (*cough* *cough* `Qubes,Ubuntu,Debian`).
+# GuestSneezeOS Immutable Rolling
+GuestSneezeOS is a robust, free-to-use ,lightweight,Immutable,operating system designed to bring the functionality of Valve's SteamOS to a wide range of devices, including desktops, laptops, and more. We aim to support all compatible computers (please check the system requirements). GuestSneezeOS is also less bloated than other distros (*cough* *cough* `Qubes,Ubuntu,Debian`).
 ![319986030-05a2442c-cedc-4bf5-9f73-71d5c1098aaf](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/assets/163439609/32015c8f-8259-48a3-92e6-846248197867)
 ![badge](https://github.com/GuestSneezeOS-Official/GuestSneezeOS/actions/workflows/main.yml/badge.svg) 
 [![Steam](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)](https://img.shields.io/badge/steam-%23000000.svg?style=plastic&logo=steam&logoColor=white)
