@@ -142,6 +142,19 @@ Driver Support for These Devices
 | Bluetooth	| Yes |	linux-firmware-valve |
 |Wi-Fi |	Yes |	linux-firmware-valve |
 | Touchscreen	| Yes	|
+
+#### OneXPlayer Handhelds (@lUkeshortcloud made this possible)
+
+| Hardware | Supported | Third-Party Driver(s) |
+| -------- | --------- | --------- |
+| Controller | Yes | |
+| NVMe | Yes | |
+| Sound | Yes | |
+| Fans | Yes | [oxp-sensors-dkms-git](https://gitlab.com/Samsagax/oxp-sensors) |
+| Bluetooth | Yes | |
+| Wi-Fi | Yes | |
+| Fingerprint scanner | No | |
+
 # Troubleshooting
 ## GuestSneezeOS not booting
 - There are many different reasons why GuestSneezeOS may not be booting.
