@@ -282,6 +282,8 @@ you should be able to use docker without root
 ```
 docker run -it --rm --name alpine alpine:latest /bin/sh
 ```
+## PROGRAMMING LANGUAGES USED
+CSS,SHELL,QML,JS
 
 ## Information Sources
 [Arch Wiki](https://wiki.archlinux.org/)
