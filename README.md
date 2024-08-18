@@ -1,4 +1,4 @@
-### DEVELOPMENT CONTINUES HERE : https://github.com/GuestSneezeOS/GuestSneezeOS-winesap
+### DEVELOPMENT CONTINUES HERE : https://github.com/GuestSneeze-OS/GuestSneezeOS
 
 # GuestSneezeOS Immutable Rolling
 GuestSneezeOS is a robust, free-to-use ,lightweight,Immutable,operating system designed to bring the functionality of Valve's SteamOS to a wide range of devices, including desktops, laptops, and more. We aim to support all compatible computers (please check the system requirements). GuestSneezeOS is also less bloated than other distros (*cough* *cough* `Qubes,Ubuntu,Debian`).
